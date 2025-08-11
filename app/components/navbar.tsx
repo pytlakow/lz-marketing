@@ -1,0 +1,151 @@
+"use client";
+import React, { useState } from "react";
+import { usePathname } from "next/navigation";
+// Removed framer-motion import
+import Logo from "./logo";
+import Link from "./link";
+import Button from "./button";
+import Search from "./search";
+import Icon from "./icon";
+
+const Navbar: React.FC = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const pathname = usePathname();
+    return (
+        <nav className="sticky top-0 z-50 bg-[#fafafa] text-slate-700">
+            <div className="container mx-auto max-w-7xl my-8 px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+                <div className="flex flex-row items-center">
+                    <div className="flex w-[200px]">
+                        <Logo />
+                    </div>
+                    <div className="hidden text-2xl md:flex space-x-8 ml-20 pt-2">
+                        <Link isActive={pathname === "/"} href="/">
+                            Product
+                        </Link>
+                        <Link href="/pricing" isActive={pathname === "/pricing"}>Pricing</Link>
+                        <div
+                            className="relative"
+                            onMouseEnter={() => setDropdownOpen(true)}
+                            onMouseLeave={() => setDropdownOpen(false)}
+                        >
+                            <div className="flex items-center cursor-pointer">
+                                <Link
+                                    href="/resources"
+                                    isActive={pathname === "/resources"}
+                                    className="flex items-center"
+                                >
+                                    Resources
+                                    <span className="ml-2 mt-2">
+                                        <Icon name="chavrionDown" />
+                                    </span>
+                                </Link>
+                            </div>
+                            {/* Dropdown menu */}
+                            <div
+                                className={`absolute left-0 top-full w-[400px] bg-white shadow-lg rounded-lg transition-all duration-200 z-50 ${
+                                    dropdownOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                                }`}
+                            >
+                                <div className="flex flex-row p-6 gap-8">
+                                    <div className="flex flex-col space-y-2 flex-1">
+                                        <Link href="/resources/docs">Documentation</Link>
+                                        <Link href="/resources/blog">Blog</Link>
+                                        <Link href="/resources/tutorials">Tutorials</Link>
+                                    </div>
+                                    <div className="flex flex-col space-y-2 flex-1">
+                                        <Link href="/resources/support">Support</Link>
+                                        <Link href="/resources/community">Community</Link>
+                                        <Link href="/resources/faq">FAQ</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <Link href="/about" isActive={pathname === "/about"}>About</Link>
+                    </div>
+                </div>
+                <div className="hidden lg:flex space-x-8">
+                    <Search />
+                </div>
+                <div className="md:flex space-x-8">
+                    <Button>
+                        <span className="mr-2">
+                            <Icon name="download" />
+                        </span>
+                        Try us out!
+                    </Button>
+                </div>
+                <div className="md:hidden">
+                    {/* Mobile menu button */}
+                    <button
+                        onClick={() => setIsOpen(!isOpen)}
+                        type="button"
+                        className="text-gray-600 hover:text-gray-900 focus:outline-none cursor-pointer"
+                        aria-label="Open menu"
+                    >
+                        <svg
+                            className="h-6 w-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M4 6h16M4 12h16M4 18h16"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div
+                className={`fixed top-0 left-0 w-full h-screen flex flex-col z-50 transition-all duration-500 ease-in-out ${
+                    isOpen
+                        ? "opacity-100 translate-y-0 pointer-events-auto backdrop-blur-xs"
+                        : "opacity-0 -translate-y-full pointer-events-none"
+                }`}
+            >
+                <div className="shadow-lg bg-white relative z-60">
+                    <div className="flex flex-row items-center justify-between mx-4 mt-6">
+                        <div className="flex w-[200px]">
+                            <Logo />
+                        </div>
+                        <button
+                            onClick={() => setIsOpen(false)}
+                            type="button"
+                            className=" text-gray-600 hover:text-gray-900 focus:outline-none cursor-pointer"
+                            aria-label="Close menu"
+                        >
+                            <svg
+                                className="h-6 w-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div className="flex text-xl flex-col space-y-4 mt-8 px-8 mb-8">
+                        <Link isActive={true} href="/">
+                            Product
+                        </Link>
+                        <Link href="/pricing">Pricing</Link>
+                        <Link href="/resources">Resources</Link>
+                        <Link href="/about">About</Link>
+                        <Search />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;
