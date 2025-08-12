@@ -27,7 +27,7 @@ const Main: React.FC = () => {
             </p>
             <div className="flex max-md:flex-col md:flex-row justify-center items-center">
                 <div className="md:mr-8 max-md:mb-4">
-                    <Button>
+                    <Button href="/download">
                         <span className="mr-2">
                             <Icon name="download" />
                         </span>

@@ -7,6 +7,7 @@ import LinkButton from "../components/link";
 import Button from "../components/button";
 import Search from "../components/search";
 import Icon from "../components/icons";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +17,10 @@ const Navbar: React.FC = () => {
         <nav className="sticky top-0 z-50 bg-[#fafafa] text-slate-700">
             <div className="container mx-auto max-w-7xl my-8 px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
                 <div className="flex flex-row items-center">
-                    <div className="flex w-[200px]">
-                        <Logo />
+                    <div className="flex items-center w-[200px] min-h-[40px]">
+                        <Link href="/" aria-label="Home" className="block w-full h-full">
+                            <Logo />
+                        </Link>
                     </div>
                     <div className="hidden text-2xl md:flex space-x-8 ml-20 pt-2">
                         <LinkButton isActive={pathname === "/"} href="/">
@@ -68,7 +71,7 @@ const Navbar: React.FC = () => {
                     <Search />
                 </div>
                 <div className="md:flex space-x-8">
-                    <Button>
+                    <Button href="/download">
                         <span className="mr-2">
                             <Icon name="download" />
                         </span>

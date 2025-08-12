@@ -11,7 +11,7 @@ const Download: React.FC = () => {
                     Transform your log management with a single command. No
                     complicated setup, just instant enterprise-grade power.
                 </p>
-                <Button>
+                <Button href="/download">
                     <span className="mr-2">
                         <Icon name="download" />
                     </span>
