@@ -60,7 +60,7 @@ const Features_1: React.FC = () => {
                     </div>
                     <div className="relative max-md:hidden md:flex-1/2 py-6">
                         <Image
-                            src="/dash.png"
+                            src={`${process.env.NODE_ENV === "production" ? "/lz-marketing" : ""}/dash.png`}
                             alt="Network"
                             width={1759}
                             height={1671}
