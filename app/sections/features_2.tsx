@@ -9,7 +9,7 @@ const Features_2: React.FC = () => {
             <div className="flex flex-col md:flex-row justify-between items-center py-16 container mx-auto text-gray-700 max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="relative max-md:hidden md:flex-1/2 py-6">
                     <Image
-                        src="/dash.png"
+                        src={`${process.env.NODE_ENV === "production" ? "/lz-marketing" : ""}/dash.png`}
                         alt="Network"
                         width={1759}
                         height={1671}

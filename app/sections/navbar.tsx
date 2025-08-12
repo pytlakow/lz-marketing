@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 // Removed framer-motion import
-import Logo from "./logo";
-import LinkButton from "./link";
-import Button from "./button";
-import Search from "./search";
-import Icon from "./icons";
+import Logo from "../components/logo";
+import LinkButton from "../components/link";
+import Button from "../components/button";
+import Search from "../components/search";
+import Icon from "../components/icons";
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar";
+import Navbar from "./sections/navbar";
+import Footer from "./sections/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
           
           <main className="relative h-screen overflow-hiddenflex items-center justify-center ">
             {children}
+            <Footer></Footer>
           </main>
           
            
