@@ -13,6 +13,7 @@ const Features_2: React.FC = () => {
                         alt="Network"
                         width={1759}
                         height={1671}
+                        unoptimized
                     />
                     <div
                         className="absolute left-0 bottom-0 w-full"
