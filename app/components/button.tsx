@@ -9,7 +9,7 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 const Button: React.FC<ButtonProps> = ({ children, href, ...props }) => {
     if (href) {
         return (
-            <Link href={href} passHref legacyBehavior>
+            <Link href={href} passHref>
                 <button
                     {...props}
                     className={`flex justify-center items-center cursor-pointer bg-orange-500 hover:bg-orange-400 focus:bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:shadow-md transition-colors duration-200 ${props.className ?? ''}`}
