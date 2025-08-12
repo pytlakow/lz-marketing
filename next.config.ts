@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   output: isProd ? 'export' : undefined,
-  distDir: 'docs',
+  distDir: isProd ? 'docs' : undefined,
   basePath: isProd ? '/lz-marketing' : undefined,
   assetPrefix: isProd ? '/lz-marketing' : undefined,
   reactStrictMode: true,
