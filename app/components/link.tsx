@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
@@ -8,12 +9,12 @@ interface Props extends LinkProps {
     isActive?: boolean;
 }
 
-const Link: React.FC<Props> = ({ children, href, isActive = false, ...props }) => {
+const LinkButton: React.FC<Props> = ({ children, href, isActive = false, ...props }) => {
     return (
-        <a href={href} {...props} className={`text-gray-700 hover:text-orange-500 transition-colors duration-300 cursor-pointer flex items-center justify-center ${isActive ? 'text-orange-500' : ''}`}>
+        <Link href={href} {...props} className={`text-gray-700 hover:text-orange-500 transition-colors duration-300 cursor-pointer flex items-center justify-center ${isActive ? 'text-orange-500' : ''}`}>
             {children}
-        </a>
+        </Link>
     );
 };
 
-export default Link;
+export default LinkButton;

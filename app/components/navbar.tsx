@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 // Removed framer-motion import
 import Logo from "./logo";
-import Link from "./link";
+import LinkButton from "./link";
 import Button from "./button";
 import Search from "./search";
 import Icon from "./icons";
@@ -20,17 +20,17 @@ const Navbar: React.FC = () => {
                         <Logo />
                     </div>
                     <div className="hidden text-2xl md:flex space-x-8 ml-20 pt-2">
-                        <Link isActive={pathname === "/"} href="/">
+                        <LinkButton isActive={pathname === "/"} href="/">
                             Product
-                        </Link>
-                        <Link href="/pricing" isActive={pathname === "/pricing"}>Pricing</Link>
+                        </LinkButton>
+                        <LinkButton href="/pricing" isActive={pathname === "/pricing"}>Pricing</LinkButton>
                         <div
                             className="relative"
                             onMouseEnter={() => setDropdownOpen(true)}
                             onMouseLeave={() => setDropdownOpen(false)}
                         >
                             <div className="flex items-center cursor-pointer">
-                                <Link
+                                <LinkButton
                                     href="/resources"
                                     isActive={pathname === "/resources"}
                                     className="flex items-center"
@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
                                     <span className="ml-2 mt-2">
                                         <Icon name="chavrionDown" />
                                     </span>
-                                </Link>
+                                </LinkButton>
                             </div>
                             {/* Dropdown menu */}
                             <div
@@ -49,19 +49,19 @@ const Navbar: React.FC = () => {
                             >
                                 <div className="flex flex-row p-6 gap-8">
                                     <div className="flex flex-col space-y-2 flex-1">
-                                        <Link href="/resources/docs">Documentation</Link>
-                                        <Link href="/resources/blog">Blog</Link>
-                                        <Link href="/resources/tutorials">Tutorials</Link>
+                                        <LinkButton href="/resources/docs">Documentation</LinkButton>
+                                        <LinkButton href="/resources/blog">Blog</LinkButton>
+                                        <LinkButton href="/resources/tutorials">Tutorials</LinkButton>
                                     </div>
                                     <div className="flex flex-col space-y-2 flex-1">
-                                        <Link href="/resources/support">Support</Link>
-                                        <Link href="/resources/community">Community</Link>
-                                        <Link href="/resources/faq">FAQ</Link>
+                                        <LinkButton href="/resources/support">Support</LinkButton>
+                                        <LinkButton href="/resources/community">Community</LinkButton>
+                                        <LinkButton href="/resources/faq">FAQ</LinkButton>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <Link href="/about" isActive={pathname === "/about"}>About</Link>
+                        <LinkButton href="/about" isActive={pathname === "/about"}>About</LinkButton>
                     </div>
                 </div>
                 <div className="hidden lg:flex space-x-8">
@@ -134,12 +134,12 @@ const Navbar: React.FC = () => {
                     </div>
 
                     <div className="flex text-xl flex-col space-y-4 mt-8 px-8 mb-8">
-                        <Link isActive={true} href="/">
+                        <LinkButton isActive={true} href="/">
                             Product
-                        </Link>
-                        <Link href="/pricing">Pricing</Link>
-                        <Link href="/resources">Resources</Link>
-                        <Link href="/about">About</Link>
+                        </LinkButton>
+                        <LinkButton href="/pricing" isActive={pathname === "/pricing"}>Pricing</LinkButton>
+                        <LinkButton href="/resources" isActive={pathname === "/resources"}>Resources</LinkButton>
+                        <LinkButton href="/about" isActive={pathname === "/about"}>About</LinkButton>
                         <Search />
                     </div>
                 </div>
