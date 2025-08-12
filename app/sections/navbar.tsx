@@ -72,10 +72,10 @@ const Navbar: React.FC = () => {
                 </div>
                 <div className="md:flex space-x-8">
                     <Button href="/download">
-                        <span className="mr-2">
+                        <span className="md:mr-2">
                             <Icon name="download" />
                         </span>
-                        Try us out!
+                        <span className="hidden md:inline">Try us out!</span>
                     </Button>
                 </div>
                 <div className="md:hidden">
@@ -137,12 +137,16 @@ const Navbar: React.FC = () => {
                     </div>
 
                     <div className="flex text-xl flex-col space-y-4 mt-8 px-8 mb-8">
-                        <LinkButton isActive={true} href="/">
+                        <LinkButton onClick={() => setIsOpen(false)} isActive={pathname === "/"} href="/">
                             Product
                         </LinkButton>
-                        <LinkButton href="/pricing" isActive={pathname === "/pricing"}>Pricing</LinkButton>
-                        <LinkButton href="/resources" isActive={pathname === "/resources"}>Resources</LinkButton>
-                        <LinkButton href="/about" isActive={pathname === "/about"}>About</LinkButton>
+                        <LinkButton onClick={() => setIsOpen(false)} href="/pricing" isActive={pathname === "/pricing"}>Pricing</LinkButton>
+                        <LinkButton onClick={() => setIsOpen(false)} isActive={pathname === "/resources"} href="/resources">
+                            Resources
+                        </LinkButton>
+                        <LinkButton onClick={() => setIsOpen(false)} isActive={pathname === "/about"} href="/about">
+                            About
+                        </LinkButton>
                         <Search />
                     </div>
                 </div>
