@@ -47,8 +47,6 @@ const icons: Record<IconName, IconComponent> = {
     chavrionDown: ChavrionDwonIcon,
 };
 
-type ExtendedIconName = IconName;
-
 const Icon: React.FC<IconProps> = ({ name, color = 'currentColor', size = 24, ...props }) => {
     const SvgIcon = icons[name];
     return (

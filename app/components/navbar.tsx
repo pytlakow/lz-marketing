@@ -6,7 +6,7 @@ import Logo from "./logo";
 import Link from "./link";
 import Button from "./button";
 import Search from "./search";
-import Icon from "./icon";
+import Icon from "./icons";
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
