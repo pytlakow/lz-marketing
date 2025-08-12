@@ -19,7 +19,7 @@ const Features_1: React.FC = () => {
                         </p>
                         <div className="relative md:hidden pb-6">
                             <Image
-                                src="/dash.png"
+                                src={`${process.env.NODE_ENV === "production" ? "/lz-marketing" : ""}/dash.png`}
                                 alt="Network"
                                 width={1759}
                                 height={1671}
