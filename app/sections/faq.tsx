@@ -57,7 +57,7 @@ const faqs = [
         question: "How is LogZilla deployed?",
         answer: (
             <>
-                <p>LogZilla can be deployed in various ways depending on your organization's needs:</p>
+                <p>LogZilla can be deployed in various ways depending on your organization&apos;s needs:</p>
                 <ul>
                     <li>On-premises: Installed on a physical or virtual server within your data center.</li>
                     <li>Cloud: Deployed on platforms like AWS, Google Cloud, or Azure, offering scalability and flexibility.</li>

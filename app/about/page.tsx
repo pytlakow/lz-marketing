@@ -7,7 +7,7 @@ export default function About() {
 
             <div>
                 <h1 className="mx-auto max-w-4xl text-4xl font-medium tracking-tight text-slate-900 text-center">
-                    LogZilla is the world's first platform to provide real-time
+                    LogZilla is the world&apos;s first platform to provide real-time
                     Operational Intelligence at enterprise scale, using a
                     fraction of the resources required by other solutions.
                 </h1>
@@ -16,7 +16,7 @@ export default function About() {
                 </div>
                 <div className="mx-auto max-w-4xl text-2xl font-medium tracking-tight text-slate-900 text-center">
                     <p className="pt-8">
-                        We've worked on the largest networks in the world. We
+                        We&apos;ve worked on the largest networks in the world. We
                         were the people getting called when something went wrong
                         at the Fortune 1000. We decided to do something about
                         the endless incidents and the manual processes required
@@ -24,10 +24,10 @@ export default function About() {
                     </p>
                     <p className="pt-8">
                         Born from a small open source experiment years ago by
-                        our CEO, we've taken the core concepts and lessons
+                        our CEO, we&apos;ve taken the core concepts and lessons
                         learned along the way of providing real-time visibility
                         and automation in network operations from that open
-                        source "hobby" to a mature, intelligent, Network Event
+                        source &quot;hobby&quot; to a mature, intelligent, Network Event
                         Orchestration
                         <span className="super-script">TM</span> platform.
                         LogZilla operates with easy to use dashboards delivering
