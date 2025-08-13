@@ -26,35 +26,19 @@ const Features_2: React.FC = () => {
                     />
                 </div>
                 <div className="md:flex-1/2 sm:flex-1 md:pl-6">
-                    <p className="text-3xl font-bold">
-                        Log Management Made Easy
+                    <p className="text-3xl">
+                        Real-Time Cyber Intelligence
                     </p>
                     <p className="text-xl py-4 text-justify">
-                        LogZilla centralizes and manages logs in real-time with
-                        advanced features like deduplication, normalization,
-                        event correlation, and automation to streamline incident
-                        remediation and reduce downtime.
+                        Rapid data processing for immediate situational awareness.
                     </p>
-                    <p className="text-2xl font-bold">Scalable and Flexible</p>
+                    <p className="text-3xl">Al-Driven Operations</p>
                     <p className="text-xl py-4">
-                        LogZilla allows you to scale seamlessly as your business
-                        grows and adapt to various operational needs without
-                        hassle.
+                        Automated decision-making in dynamic environments.
                     </p>
-                    <p className="text-2xl font-bold">Know Everything</p>
+                    <p className="text-3xl">Scalable and Portable</p>
                     <p className="text-xl py-4">
-                        LogZilla integrates with external sources to provide
-                        detailed context, ensuring full visibility, reducing
-                        false positives, speeding investigations, and enabling
-                        automation.
-                    </p>
-                    <p className="text-2xl font-bold">SIEM Turbocharger</p>
-                    <p className="text-xl py-4">
-                        LogZilla can be positioned directly in front as a
-                        pre-processor to add enriched metadata, remove
-                        duplicates, and reduce SIEM costs by analyzing,
-                        deduplicating, collecting, enriching, and routing data
-                        at any scale.
+                        Easily adaptable to diverse operational scales and settings.
                     </p>
                 </div>
             </div>

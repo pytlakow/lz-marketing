@@ -1,10 +1,12 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import FAQ from "../sections/faq";
 
 
 const DownloadPage: React.FC = () => {
   return (
+    <>
     <section className="container mx-auto max-w-3xl py-16 px-4 text-center">
       <h1 className="text-4xl mb-6">Download LogZilla</h1>
       
@@ -38,6 +40,11 @@ No complicated setup, just instant enterprise-grade power.
         Need help? Visit our <Link href="/resources/docs" className="text-orange-500 underline">Documentation</Link> or <Link href="/resources/support" className="text-orange-500 underline">Support</Link> page.
       </p>
     </section>
+    <div className="bg-white">
+        <FAQ />
+    </div>
+    
+    </>
   );
 };
 
