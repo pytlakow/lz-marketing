@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import CalendlyEmbed from "../components/calendly-embed";
-import CalendlyPopup from "../components/calendly-popup";
+
 
 const pricingPlans = [
     {
@@ -59,6 +58,7 @@ export default function PricingPage() {
                 </div>
             </section>
             <section className="bg-gray-100 py-16">
+                
                 <stripe-pricing-table
                     pricing-table-id="prctbl_1QgxNABjYBeFaZwP2Gqme3he"
                     publishable-key="pk_live_51Pyd2xBjYBeFaZwPNBMnLtw2hZuessmCU7m7EkTzedssntJt4NeC3UmT8iTI1AsMFeCW4mr6e0NfdT2n5BdkIG8s00u32BBL9M"
