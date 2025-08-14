@@ -12,6 +12,7 @@ import Link from "next/link";
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [isDropdownPricingOpen, setDropdownPricingOpen] = useState(false);
     const pathname = usePathname();
     return (
         <nav className="sticky top-0 z-50 bg-[#fafafa] text-slate-700">
@@ -27,6 +28,37 @@ const Navbar: React.FC = () => {
                             Product
                         </LinkButton>
                         <LinkButton href="/pricing" isActive={pathname === "/pricing"}>Pricing</LinkButton>
+                        <div
+                            className="relative"
+                            onMouseEnter={() => setDropdownPricingOpen(true)}
+                            onMouseLeave={() => setDropdownPricingOpen(false)}
+                        >
+                            <div className="flex items-center cursor-pointer">
+                                <LinkButton
+                                    href="/pricing"
+                                    isActive={pathname === "/pricing"}
+                                    className="flex items-center"
+                                >
+                                    Pricing
+                                    <span className="ml-2 mt-2">
+                                        <Icon name="chavrionDown" />
+                                    </span>
+                                </LinkButton>
+                            </div>
+                            {/* Dropdown menu */}
+                            <div
+                                className={`absolute left-0 top-full w-[200px] bg-white shadow-lg rounded-lg transition-all duration-200 z-50 ${
+                                    isDropdownPricingOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                                }`}
+                            >
+                                <div className="flex flex-col p-6 space-y-2 flex-1">
+                                        <LinkButton href="/pricing/docs">Cloud</LinkButton>
+                                        <LinkButton href="/pricing/blog">VM</LinkButton>
+                                        <LinkButton href="/pricing/tutorials">Direct install</LinkButton>
+                                        
+                                </div>
+                            </div>
+                        </div>
                         <div
                             className="relative"
                             onMouseEnter={() => setDropdownOpen(true)}

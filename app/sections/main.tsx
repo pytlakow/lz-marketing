@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../components/button";
 import Icon from "../components/icons";
+import CalendlyPopup from "../components/calendly-popup";
 
 const Main: React.FC = () => {
     return (
@@ -35,12 +36,8 @@ const Main: React.FC = () => {
                     </Button>
                 </div>
                 <div>
-                    <Button className="">
-                        <span className="mr-2">
-                            <Icon name="calendar" />
-                        </span>
-                        Get a Personalized Demo.
-                    </Button>
+
+                    <CalendlyPopup url="https://calendly.com/teamneo/logzilla-discovery?hide_event_type_details=1&hide_gdpr_banner=1" buttonText="Get a Personalized Demo." />
                 </div>
             </div>
         </section>

@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -28,11 +29,16 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+          <head>
+            <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+            
+          </head>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased text-slate-700`}
             >
                 <ScrollToTop />
                 <Navbar></Navbar>
+                
 
                 <main className="relative h-screen overflow-hiddenflex items-center justify-center ">
                     {children}
