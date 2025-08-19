@@ -21,10 +21,7 @@ const Main: React.FC = () => {
                 </span>
             </h1>
             <p className="mx-auto max-w-4xl text-2xl pt-10 pb-10 text-center leading-relaxed">
-                LogZilla centralizes and manages logs in real-time with advanced
-                features like deduplication, normalization, event correlation,
-                and automation to streamline incident remediation and reduce
-                downtime.
+                LogZilla delivers AI-powered log management with real-time centralization, intelligent deduplication, event correlation, and natural language querying through LogZilla Copilot, streamlining incident response and reducing downtime for enterprise IT teams.
             </p>
             <div className="flex max-md:flex-col md:flex-row justify-center items-center">
                 <div className="md:mr-8 max-md:mb-4">

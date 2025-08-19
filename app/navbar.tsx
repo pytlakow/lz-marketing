@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 // Removed framer-motion import
-import Logo from "../components/logo";
-import LinkButton from "../components/link";
-import Button from "../components/button";
-import Search from "../components/search";
-import Icon from "../components/icons";
+import Logo from "./components/logo";
+import LinkButton from "./components/link";
+import Button from "./components/button";
+import Search from "./components/search";
+import Icon from "./components/icons";
 import Link from "next/link";
 
 const Navbar: React.FC = () => {
@@ -24,41 +24,17 @@ const Navbar: React.FC = () => {
                         </Link>
                     </div>
                     <div className="hidden text-2xl md:flex space-x-8 ml-20 pt-2">
-                        <LinkButton isActive={pathname === "/"} href="/">
-                            Product
+                        <LinkButton isActive={pathname === "/software"} href="/software">
+                            Software
                         </LinkButton>
-                        <LinkButton href="/pricing" isActive={pathname === "/pricing"}>Pricing</LinkButton>
-                        <div
-                            className="relative"
-                            onMouseEnter={() => setDropdownPricingOpen(true)}
-                            onMouseLeave={() => setDropdownPricingOpen(false)}
-                        >
-                            <div className="flex items-center cursor-pointer">
-                                <LinkButton
-                                    href="/pricing"
-                                    isActive={pathname === "/pricing"}
-                                    className="flex items-center"
-                                >
-                                    Pricing
-                                    <span className="ml-2 mt-2">
-                                        <Icon name="chavrionDown" />
-                                    </span>
-                                </LinkButton>
-                            </div>
-                            {/* Dropdown menu */}
-                            <div
-                                className={`absolute left-0 top-full w-[200px] bg-white shadow-lg rounded-lg transition-all duration-200 z-50 ${
-                                    isDropdownPricingOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-                                }`}
-                            >
-                                <div className="flex flex-col p-6 space-y-2 flex-1">
-                                        <LinkButton href="/pricing/docs">Cloud</LinkButton>
-                                        <LinkButton href="/pricing/blog">VM</LinkButton>
-                                        <LinkButton href="/pricing/tutorials">Direct install</LinkButton>
-                                        
-                                </div>
-                            </div>
-                        </div>
+                        <LinkButton isActive={pathname === "/cloud"} href="/cloud">
+                            Cloud
+                        </LinkButton>
+                        <LinkButton isActive={pathname === "/appliances"} href="/appliances">
+                            Appliances
+                        </LinkButton>
+
+
                         <div
                             className="relative"
                             onMouseEnter={() => setDropdownOpen(true)}
@@ -96,12 +72,10 @@ const Navbar: React.FC = () => {
                                 </div>
                             </div>
                         </div>
-                        <LinkButton href="/about" isActive={pathname === "/about"}>About</LinkButton>
+                        {/* <LinkButton href="/about" isActive={pathname === "/about"}>About</LinkButton> */}
                     </div>
                 </div>
-                <div className="hidden lg:flex space-x-8">
-                    <Search />
-                </div>
+              
                 <div className="md:flex space-x-8">
                     <Button href="/download">
                         <span className="md:mr-2">
