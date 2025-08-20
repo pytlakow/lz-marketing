@@ -29,17 +29,13 @@ const AiPowered: React.FC = () => (
                 designed to reduce downtime and streamline operations for
                 enterprise IT teams.
             </p>
-            <p className="text-3xl">
-                Intelligent Log Management with AI Copilot
-            </p>
+            <p className="text-3xl">Smart Automation & Scalability</p>
             <p className="text-xl py-4 text-justify">
-                LogZilla revolutionizes log analysis with AI-powered natural
-                language querying, real-time centralization, and intelligent
-                automation. Ask questions in plain English, get instant
-                insights, and accelerate incident resolution with advanced
-                deduplication, normalization, and event correlation — all
-                designed to reduce downtime and streamline operations for
-                enterprise IT teams.
+                Scale seamlessly as your infrastructure grows with LogZilla’s
+                flexible architecture. Automated pattern recognition,
+                intelligent alerting, and conversational troubleshooting adapt
+                to your operational needs without complexity, ensuring
+                consistent performance at any scale.    
             </p>
         </div>
     </section>

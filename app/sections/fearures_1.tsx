@@ -1,6 +1,4 @@
 import React from "react";
-import Button from "../components/button";
-import Icon from "../components/icons";
 import Image from "next/image";
 
 const Features_1: React.FC = () => {
