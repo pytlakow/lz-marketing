@@ -2,6 +2,8 @@
 import Link from "next/link";
 import React from "react";
 import FAQ from "../sections/faq";
+import CloudBanner from "../sections/cloud-banner";
+import Meeting from "../sections/meeting";
 
 
 const DownloadPage: React.FC = () => {
@@ -40,10 +42,13 @@ No complicated setup, just instant enterprise-grade power.
         Need help? Visit our <Link href="/resources/docs" className="text-orange-500 underline">Documentation</Link> or <Link href="/resources/support" className="text-orange-500 underline">Support</Link> page.
       </p>
     </section>
+    <CloudBanner />
+    <Meeting />
     <div className="bg-white">
         <FAQ />
     </div>
     
+
     </>
   );
 };

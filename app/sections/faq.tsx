@@ -106,7 +106,7 @@ export default function FAQ() {
     return (
         <section className="container mx-auto max-w-3xl py-16 px-4 text-center">
             <h1 className="text-3xl mb-16">Frequently Asked Questions</h1>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+            <ul className="text-xl" style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {faqs.map((faq, idx) => (
                     <li key={faq.question} style={{ marginBottom: "1.5em" }}>
                         <button
@@ -120,7 +120,7 @@ export default function FAQ() {
                                 background: "none",
                                 border: "none",
                                 padding: "0.75em 0",
-                                fontSize: "1.1em",
+                                
                                 
                                 cursor: "pointer",
                                 transition: "color 0.25s",

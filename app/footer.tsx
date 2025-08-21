@@ -11,23 +11,18 @@ const Footer: React.FC = () => {
                         <h3 className="font-semibold mb-3">Product</h3>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#" className="hover:underline">
-                                    Features
+                                <a href="/software" className="hover:underline">
+                                    Software
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">
-                                    Pricing
+                                <a href="/cloud" className="hover:underline">
+                                    Cloud
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">
-                                    Free Demo
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:underline">
-                                    Documentation
+                                <a href="/appliances" className="hover:underline">
+                                    Appliences
                                 </a>
                             </li>
                         </ul>
@@ -36,12 +31,12 @@ const Footer: React.FC = () => {
                         <h3 className="font-semibold mb-3">Company</h3>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#" className="hover:underline">
+                                <a href="/resources/about" className="hover:underline">
                                     About Us
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">
+                                <a href="/resources/contact" className="hover:underline">
                                     Contact
                                 </a>
                             </li>
@@ -51,7 +46,7 @@ const Footer: React.FC = () => {
                         <h3 className="font-semibold mb-3">Support</h3>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#" className="hover:underline">
+                                <a href="/resources/faq" className="hover:underline">
                                     FAQ
                                 </a>
                             </li>
