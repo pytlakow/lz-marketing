@@ -51,17 +51,21 @@ const Footer: React.FC = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">
+                                <a href="/resources/privacy" className="hover:underline">
                                     Privacy Policy
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">
+                                <a href="/resources/terms" className="hover:underline">
                                     Terms of Use
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">
+                                <a
+                                    href="https://api.logzilla.io/"
+                                    target="_blank"
+                                    className="hover:underline"
+                                >
                                     API Documentation
                                 </a>
                             </li>

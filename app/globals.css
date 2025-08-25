@@ -73,3 +73,14 @@ body {
   pointer-events: none;
   animation: infinite aurora 20s linear infinite;
 }
+
+.calendly-overlay {
+  display: block !important;
+  opacity: 1 !important;
+  z-index: 99999 !important;
+}
+.calendly-popup {
+  display: block !important;
+  opacity: 1 !important;
+  z-index: 99999 !important;
+}
