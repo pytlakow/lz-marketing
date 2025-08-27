@@ -39,11 +39,11 @@ const AppliancesPage: React.FC = () => {
                 <div className="flex-1 bg-white rounded-xl shadow-md p-8 flex flex-col items-center border border-slate-200">
                     <h3 className="text-xl font-bold text-slate-900 mb-2">SMB Appliance</h3>
                     <span className="text-2xl font-semibold text-orange-600 mb-1">Small</span>
-                    <span className="text-slate-500 mb-4">Business</span>
-                    <p className="text-slate-600 text-center mb-6 text-sm">
+                    <span className="text-slate-500 mb-4 text-xl">Business</span>
+                    <p className="text-slate-600 text-center mb-6">
                         Perfect for small to medium businesses with moderate log processing needs.
                     </p>
-                    <ul className="text-slate-700 text-sm mb-6 space-y-2 self-start">
+                    <ul className="text-slate-700 mb-6 space-y-2 self-start">
                         <li>✔ 19.0TB raw storage capacity</li>
                         <li>✔ 256GB ECC memory</li>
                         <li>✔ 24-core/48-thread processor</li>
@@ -59,16 +59,16 @@ const AppliancesPage: React.FC = () => {
                 </div>
                 {/* MSE Appliance */}
                 <div className="flex-1 bg-white rounded-xl shadow-md p-8 flex flex-col items-center border border-orange-400 relative">
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-xs font-bold px-4 py-1 rounded-full shadow">
+                    <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-lg font-bold px-4 py-1 rounded-full shadow">
                         Most Popular
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">MSE Appliance</h3>
                     <span className="text-2xl font-semibold text-orange-600 mb-1">Mid-Size</span>
-                    <span className="text-slate-500 mb-4">Enterprise</span>
-                    <p className="text-slate-600 text-center mb-6 text-sm">
+                    <span className="text-slate-500 mb-4 text-xl">Enterprise</span>
+                    <p className="text-slate-600 text-center mb-6">
                         Designed for mid-size enterprises with growing log processing requirements.
                     </p>
-                    <ul className="text-slate-700 text-sm mb-6 space-y-2 self-start">
+                    <ul className="text-slate-700 mb-6 space-y-2 self-start">
                         <li>✔ 76.8TB raw storage capacity</li>
                         <li>✔ 256GB ECC memory</li>
                         <li>✔ 24-core/48-thread processor</li>
@@ -85,12 +85,12 @@ const AppliancesPage: React.FC = () => {
                 {/* Enterprise Appliance */}
                 <div className="flex-1 bg-white rounded-xl shadow-md p-8 flex flex-col items-center border border-slate-200">
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Enterprise Appliance</h3>
-                    <span className="text-2xl font-semibold text-blue-600 mb-1">Large</span>
-                    <span className="text-slate-500 mb-4">Enterprise</span>
-                    <p className="text-slate-600 text-center mb-6 text-sm">
+                    <span className="text-2xl font-semibold text-orange-600 mb-1">Large</span>
+                    <span className="text-slate-500 mb-4 text-xl">Enterprise</span>
+                    <p className="text-slate-600 text-center mb-6">
                         Built for large enterprises with massive log processing and retention needs.
                     </p>
-                    <ul className="text-slate-700 text-sm mb-6 space-y-2 self-start">
+                    <ul className="text-slate-700 mb-6 space-y-2 self-start">
                         <li>✔ 153.6TB raw storage capacity</li>
                         <li>✔ 256GB ECC memory</li>
                         <li>✔ 24-core/48-thread processor</li>
@@ -105,7 +105,7 @@ const AppliancesPage: React.FC = () => {
                     </button>
                 </div>
             </div>
-            <p className="text-slate-500 text-xs mt-10 text-center max-w-3xl">
+            <p className="text-slate-500 mt-10 text-center max-w-3xl">
                 All appliance configurations include comprehensive documentation and support resources. For detailed specifications or custom requirements, please contact our team below to discuss your specific needs.
             </p>
         </section>

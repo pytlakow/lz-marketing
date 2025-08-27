@@ -18,7 +18,7 @@ import React from "react";
         </p>
         <p className="text-2xl my-2">LogZilla Service Overview</p>
         <p>
-            The Service is a website that: (a) provides information regarding LogZilla and LogZilla’s proprietary software; and (b) facilitates the purchase of licenses and access to LogZilla software. Your use of LogZilla software is subject to additional terms and conditions which you will have an opportunity to review and accept prior to downloading or otherwise accessing LogZilla software, currently: End User License Agreement.
+            The Service is a website that: (a) provides information regarding LogZilla and LogZilla&quot;s proprietary software; and (b) facilitates the purchase of licenses and access to LogZilla software. Your use of LogZilla software is subject to additional terms and conditions which you will have an opportunity to review and accept prior to downloading or otherwise accessing LogZilla software, currently: End User License Agreement.
         </p>
         <p className="text-2xl my-2">Eligibility</p>
         <p>
