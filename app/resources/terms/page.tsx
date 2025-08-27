@@ -74,7 +74,7 @@ import React from "react";
         </ul>
         <p className="text-2xl my-2">Repeat Infringers</p>
         <p>
-            LogZilla will promptly terminate without notice the accounts of users that are determined by LogZilla to be "Repeat Infringers." A Repeat Infringer is a user who has been notified of infringing activity or has had User Content removed from the Service at least twice.
+            LogZilla will promptly terminate without notice the accounts of users that are determined by LogZilla to be &quot;Repeat Infringers.&quot; A Repeat Infringer is a user who has been notified of infringing activity or has had User Content removed from the Service at least twice.
         </p>
         <p className="text-2xl my-2">Prohibited Conduct</p>
         <p>
