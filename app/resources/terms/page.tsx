@@ -6,10 +6,10 @@ import React from "react";
         <h1 className="text-3xl mb-6">Terms of Use</h1>
     <article className="prose prose-lg max-w-none">
         <p>
-            Welcome, and thank you for your interest in LogZilla Corporation ("LogZilla," "we," or "us") and our website at www.logzilla.net (our "Service"). These Terms of Use are a legally binding contract between you and LogZilla regarding your use of the Service. 
+            Welcome, and thank you for your interest in LogZilla Corporation (&quot;LogZilla,&quot; &quot;we,&quot; or &quot;us&quot;) and our website at www.logzilla.net (our &quot;Service&quot;). These Terms of Use are a legally binding contract between you and LogZilla regarding your use of the Service. 
         </p>
         <p>
-            PLEASE READ THE FOLLOWING TERMS CAREFULLY. BY USING THE SERVICE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THE FOLLOWING TERMS AND CONDITIONS, INCLUDING THE LOGZILLA PRIVACY POLICY (TOGETHER, THE "TERMS"). If you are not eligible, or do not agree to the Terms, then you do not have our permission to use the Service.
+            PLEASE READ THE FOLLOWING TERMS CAREFULLY. BY USING THE SERVICE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THE FOLLOWING TERMS AND CONDITIONS, INCLUDING THE LOGZILLA PRIVACY POLICY (TOGETHER, THE &quot;TERMS&quot;). If you are not eligible, or do not agree to the Terms, then you do not have our permission to use the Service.
         </p>
         <p className="text-2xl my-2"></p>
         <p>
@@ -33,7 +33,7 @@ import React from "react";
         </p>
         <p className="text-2xl my-2">User Content</p>
         <p>
-            <strong>User Content Generally.</strong> Certain features of the Service may permit users to upload content to the Service, including messages, reviews, photos, video, images, folders, data, text, and other types of works ("User Content") and to publish User Content on the Service. You retain copyright and any other proprietary rights that you may hold in the User Content that you post to the Service.
+            <strong>User Content Generally.</strong> Certain features of the Service may permit users to upload content to the Service, including messages, reviews, photos, video, images, folders, data, text, and other types of works (&quot;User Content&quot;) and to publish User Content on the Service. You retain copyright and any other proprietary rights that you may hold in the User Content that you post to the Service.
         </p>
         <p>
             <strong>Limited License Grant to LogZilla.</strong> By posting or publishing User Content, you grant LogZilla a worldwide, non-exclusive, perpetual, irrevocable, royalty-free, fully paid right and license (with the right to sublicense) to host, store, transfer, display, perform, reproduce, modify for the purpose of formatting for display, and distribute your User Content, in whole or in part, in any media formats and through any media channels now known or hereafter developed.
@@ -91,7 +91,7 @@ import React from "react";
         </ul>
         <p className="text-2xl my-2">Termination of Use; Discontinuation and Modification of the Service</p>
         <p>
-            If you create an account for the Service, you may terminate it at any time by clicking on the "Delete" button in the account profile. If you terminate your account, you remain obligated to pay all outstanding fees, if any, incurred prior to termination relating to the Service. If you violate any provision of these Terms, your permission from us to use the Service will terminate automatically. In addition, LogZilla may in its sole discretion terminate your user account on the Service or suspend or terminate your access to the Service at any time for any reason or no reason, with or without notice. We also reserve the right to modify or discontinue the Service at any time (including by limiting or discontinuing certain features of the Service), temporarily or permanently, without notice to you. We will have no liability whatsoever on account of any change to the Service or any suspension or termination of your access to or use of the Service.
+            If you create an account for the Service, you may terminate it at any time by clicking on the &quot;Delete&quot; button in the account profile. If you terminate your account, you remain obligated to pay all outstanding fees, if any, incurred prior to termination relating to the Service. If you violate any provision of these Terms, your permission from us to use the Service will terminate automatically. In addition, LogZilla may in its sole discretion terminate your user account on the Service or suspend or terminate your access to the Service at any time for any reason or no reason, with or without notice. We also reserve the right to modify or discontinue the Service at any time (including by limiting or discontinuing certain features of the Service), temporarily or permanently, without notice to you. We will have no liability whatsoever on account of any change to the Service or any suspension or termination of your access to or use of the Service.
         </p>
         <p className="text-2xl my-2">Privacy Policy</p>
         <p>
@@ -99,7 +99,7 @@ import React from "react";
         </p>
         <p className="text-2xl my-2">Additional Terms</p>
         <p>
-            Your use of the Service is subject to all additional terms, policies, rules, or guidelines applicable to the Service or certain features of the Service that we may post on or link to from the Service (the "Additional Terms"), such as end-user license agreements for any downloadable software, or rules that applicable to a particular feature or content on the Service, subject to Section 11. All Additional Terms are incorporated by this reference into, and made a part of, these Terms.
+            Your use of the Service is subject to all additional terms, policies, rules, or guidelines applicable to the Service or certain features of the Service that we may post on or link to from the Service (the &quot;Additional Terms&quot;), such as end-user license agreements for any downloadable software, or rules that applicable to a particular feature or content on the Service, subject to Section 11. All Additional Terms are incorporated by this reference into, and made a part of, these Terms.
         </p>
         <p className="text-2xl my-2">Modification of these Terms</p>
         <p>
@@ -107,15 +107,15 @@ import React from "react";
         </p>
         <p className="text-2xl my-2">Ownership; Proprietary Rights</p>
         <p>
-            The Service is owned and operated by LogZilla. The visual interfaces, graphics, design, compilation, information, data, computer code (including source code or object code), products, software, Services, and all other elements of the Service ("Materials") provided by LogZilla are protected by intellectual property and other laws. All Materials included in the Service are the property of LogZilla or our third-party licensors. Except as expressly authorized by LogZilla, you may not make use of the Materials. LogZilla reserves all rights to the Materials not granted expressly in these Terms.
+            The Service is owned and operated by LogZilla. The visual interfaces, graphics, design, compilation, information, data, computer code (including source code or object code), products, software, Services, and all other elements of the Service (&quot;Materials&quot;) provided by LogZilla are protected by intellectual property and other laws. All Materials included in the Service are the property of LogZilla or our third-party licensors. Except as expressly authorized by LogZilla, you may not make use of the Materials. LogZilla reserves all rights to the Materials not granted expressly in these Terms.
         </p>
         <p className="text-2xl my-2">Feedback</p>
         <p>
-            If you choose to provide input and suggestions regarding problems with or proposed modifications or improvements to the Service ("Feedback"), then you hereby grant LogZilla an unrestricted, perpetual, irrevocable, non-exclusive, fully-paid, royalty-free right to exploit the Feedback in any manner and for any purpose, including to improve the Service and create other products and Services.
+            If you choose to provide input and suggestions regarding problems with or proposed modifications or improvements to the Service (&quot;Feedback&quot;), then you hereby grant LogZilla an unrestricted, perpetual, irrevocable, non-exclusive, fully-paid, royalty-free right to exploit the Feedback in any manner and for any purpose, including to improve the Service and create other products and Services.
         </p>
         <p className="text-2xl my-2">Indemnity</p>
         <p>
-            You are responsible for your use of the Service, and you will defend and indemnify LogZilla and its officers, directors, employees, consultants, affiliates, subsidiaries and agents (together, the "LogZilla Entities") from and against every claim, liability, damage, loss, and expense, including reasonable attorneys' fees and costs, arising out of or in any way connected with: (a) your access to, use of, or alleged use of, the Service; (b) your violation of any portion of these Terms, any representation, warranty, or agreement referenced in these Terms, or any applicable law or regulation; (c) your violation of any third-party right, including any intellectual property right or publicity, confidentiality, other property, or privacy right; or (d) any dispute or issue between you and any third party. We reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you (without limiting your indemnification obligations with respect to that matter), and in that case, you agree to cooperate with our defense of that claim.
+            You are responsible for your use of the Service, and you will defend and indemnify LogZilla and its officers, directors, employees, consultants, affiliates, subsidiaries and agents (together, the &quot;LogZilla Entities&quot;) from and against every claim, liability, damage, loss, and expense, including reasonable attorneys' fees and costs, arising out of or in any way connected with: (a) your access to, use of, or alleged use of, the Service; (b) your violation of any portion of these Terms, any representation, warranty, or agreement referenced in these Terms, or any applicable law or regulation; (c) your violation of any third-party right, including any intellectual property right or publicity, confidentiality, other property, or privacy right; or (d) any dispute or issue between you and any third party. We reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you (without limiting your indemnification obligations with respect to that matter), and in that case, you agree to cooperate with our defense of that claim.
         </p>
         <p className="text-2xl my-2">Disclaimers; No Warranties</p>
         <p>
@@ -146,7 +146,7 @@ import React from "react";
         </p>
         <p className="text-2xl my-2">Notice</p>
         <p>
-            The following are trademarks of LogZilla Corp: "Network Event Orchestrator", "Network Event Orchestration", "NEO" logo, "Preduplication", "PreDup". The following are Registered trademarks of LogZilla Corporation: "LogZilla". Other marks as used in this website are the property of the respective owners thereof. Certain products of LogZilla Corporation may contain intellectual property covered by one or more of the following: US Patent Numbers 9,122,694 and 9,195,674.
+            The following are trademarks of LogZilla Corp: &quot;Network Event Orchestrator&quot;, &quot;Network Event Orchestration&quot;, &quot;NEO&quot; logo, &quot;Preduplication&quot;, &quot;PreDup&quot;. The following are Registered trademarks of LogZilla Corporation: &quot;LogZilla&quot;. Other marks as used in this website are the property of the respective owners thereof. Certain products of LogZilla Corporation may contain intellectual property covered by one or more of the following: US Patent Numbers 9,122,694 and 9,195,674.
         </p>
         <p className="text-2xl my-2">General</p>
         <p>

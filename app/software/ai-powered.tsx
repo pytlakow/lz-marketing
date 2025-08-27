@@ -21,8 +21,8 @@ const AiPowered: React.FC = () => (
                 <iframe
                     width="1280"
                     height="720"
-                    src="https://youtu.be/RwYWWFjJ5OE"
-                    title="YouTube video player"
+                    src="https://www.youtube.com/embed/RwYWWFjJ5OE"
+                    title="YouTube video player" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     style={{ maxWidth: "100%", borderRadius: "12px" }}

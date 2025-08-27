@@ -5,11 +5,11 @@ const PrivacyPage: React.FC = () => (
         <h1 className="text-3xl mb-6">Privacy Policy</h1>
     <article className="prose prose-lg max-w-none">
         <p>
-            This Privacy Policy governs the manner in which LogZilla Corp ("LogZilla," "us," and "we") collects, uses, maintains, discloses, and safeguards information collected from users (each, a "User") of the www.logzilla.net website, products, and services (collectively, "Services").
+            This Privacy Policy governs the manner in which LogZilla Corp (&quot;LogZilla,&quot; &quot;us,&quot; and &quot;we&quot;) collects, uses, maintains, discloses, and safeguards information collected from users (each, a &quot;User&quot;) of the www.logzilla.net website, products, and services (collectively, &quot;Services&quot;).
         </p>
         <p className="text-2xl my-2">Personal Information</p>
         <p>
-            For purposes of this Privacy Policy, "Personal Information" means any information relating to an identified or identifiable individual. We obtain Personal Information relating to you from various sources described below.
+            For purposes of this Privacy Policy, &quot;Personal Information&quot; means any information relating to an identified or identifiable individual. We obtain Personal Information relating to you from various sources described below.
         </p>
         <p className="text-2xl my-2">Personal Information You Provide Us</p>
         <p>
@@ -26,7 +26,7 @@ const PrivacyPage: React.FC = () => (
             We may use this information, for example, to ensure that the Site functions properly, to determine how many users have visited certain pages or opened messages or newsletters, or to prevent fraud. We work with analytics providers such as Google Analytics, which uses cookies and similar technologies to collect and analyze information about use of the Site and report on activities and trends. These services may also collect information regarding the use of other websites, apps and online resources. You can learn about Google's practices by going to <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener noreferrer">https://www.google.com/policies/privacy/partners/</a>, and opt out of them by downloading the Google Analytics opt-out browser add-on, available at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout</a>.
         </p>
         <p>
-            We also work with third parties advertisers (collectively, "Advertisers") who may also use cookies or other technologies to track your use of the Site. Advertisers also may use cookies to track your online activities across websites over time to provide interest-based advertising. Some of our Advertisers are members of the Network Advertising Initiative or the Digital Advertising Alliance. Please visit these organizations' opt-out pages to learn about how you may opt out of receiving web-based personalized ads from member companies. Please visit your device's settings or install the AppChoices app to learn more about how you may opt out of receiving personalized ads in mobile apps.
+            We also work with third parties advertisers (collectively, &quot;Advertisers&quot;) who may also use cookies or other technologies to track your use of the Site. Advertisers also may use cookies to track your online activities across websites over time to provide interest-based advertising. Some of our Advertisers are members of the Network Advertising Initiative or the Digital Advertising Alliance. Please visit these organizations&apos; opt-out pages to learn about how you may opt out of receiving web-based personalized ads from member companies. Please visit your device&apos;s settings or install the AppChoices app to learn more about how you may opt out of receiving personalized ads in mobile apps.
         </p>
         <p>
             If you do not want information collected through the use of cookies, most browsers allow you to automatically decline cookies or be given the choice of declining or accepting the transfer to your computer of a particular cookie (or cookies) from a particular site. You may also wish to refer to <a href="http://www.allaboutcookies.org/manage-cookies/index.html" target="_blank" rel="noopener noreferrer">http://www.allaboutcookies.org/manage-cookies/index.html</a>. If, however, you do not accept cookies, you may experience some inconvenience in your use of the Site.
@@ -76,10 +76,10 @@ const PrivacyPage: React.FC = () => (
                 To our third party service providers who provide services such as website hosting, data analysis, information technology and related infrastructure provision, customer service, email delivery, online advertising, auditing, and other services.
             </li>
             <li>
-                We may use third-party advertising companies to serve advertisements regarding goods and services that may be of interest to you. For more information about our advertising and marketing practices and those of the third party advertising partners, please see the "Personal Information We Collect Automatically From Your Use of the Site" section above.
+                We may use third-party advertising companies to serve advertisements regarding goods and services that may be of interest to you. For more information about our advertising and marketing practices and those of the third party advertising partners, please see the &quot;Personal Information We Collect Automatically From Your Use of the Site&quot; section above.
             </li>
             <li>
-                We may also disclose your Personal Information with your permission. We may seek your permission in various ways. For example, we may present you with an "opt-in" prompt when you register to use the Services or access certain content.
+                We may also disclose your Personal Information with your permission. We may seek your permission in various ways. For example, we may present you with an &quot;opt-in&quot; prompt when you register to use the Services or access certain content.
             </li>
             <li>
                 To a potential or actual acquirer, successor, or assignee as part of any reorganization, merger, sale, joint venture, assignment, transfer or other disposition of all or any portion of our business, assets or stock (including in bankruptcy or similar proceedings).
@@ -117,7 +117,7 @@ const PrivacyPage: React.FC = () => (
             Where required by law, we obtain your consent for the processing of certain Personal Information collected by cookies or similar technologies, or used to send you direct marketing communications, or when we carry out other processing activities for which consent may be required. If we rely on consent for the processing of your Personal Information, you have the right to withdraw it at any time and free of charge. When you do so, this will not affect the lawfulness of the processing before your consent withdrawal.
         </p>
         <p>
-            To update your preferences, ask us to remove your information from our mailing lists, delete your account or submit a request to exercise your rights under applicable law, please contact us as specified in the "Contact Us" section below.
+            To update your preferences, ask us to remove your information from our mailing lists, delete your account or submit a request to exercise your rights under applicable law, please contact us as specified in the &quot;Contact Us&quot; section below.
         </p>
         <p className="text-2xl my-2">International Cross-Border Data Transfer</p>
         <p>
