@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({ children, href, ...props }) => {
             <Link href={href} passHref>
                 <button
                     {...props}
-                    className={`flex justify-center items-center cursor-pointer bg-orange-500 hover:bg-orange-400 focus:bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:shadow-md transition-colors duration-200 ${props.className ?? ''}`}
+                    className={`flex justify-center items-center cursor-pointer bg-orange-500 hover:bg-orange-400 text-white font-semibold py-2 px-4 rounded hover:shadow-md transition-colors duration-200 ${props.className ?? ''}`}
                 >
                     {children}
                 </button>
@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({ children, href, ...props }) => {
     return (
         <button
             {...props}
-            className={`flex justify-center items-center cursor-pointer bg-orange-500 hover:bg-orange-400 focus:bg-orange-600 text-white font-semibold py-2 px-4 rounded hover:shadow-md transition-colors duration-200 ${props.className ?? ''}`}
+            className={`flex justify-center items-center cursor-pointer bg-orange-500 hover:bg-orange-400  text-white font-semibold py-2 px-4 rounded hover:shadow-md transition-colors duration-200 ${props.className ?? ''}`}
         >
             {children}
         </button>
