@@ -23,7 +23,7 @@ const PrivacyPage: React.FC = () => (
             When you use our Services, we and our third party service providers may collect information from you through automated means, such as web server logs. By using the Site, you consent to the placement of cookies, beacons, and similar technologies in your browser and on emails in accordance with this Privacy Policy. The information collected in this manner includes IP address, browser characteristics, device IDs and characteristics, country code or approximate location, operating system version, language preferences, referring URLs, and information about the usage of our Site.
         </p>
         <p>
-            We may use this information, for example, to ensure that the Site functions properly, to determine how many users have visited certain pages or opened messages or newsletters, or to prevent fraud. We work with analytics providers such as Google Analytics, which uses cookies and similar technologies to collect and analyze information about use of the Site and report on activities and trends. These services may also collect information regarding the use of other websites, apps and online resources. You can learn about Google's practices by going to <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener noreferrer">https://www.google.com/policies/privacy/partners/</a>, and opt out of them by downloading the Google Analytics opt-out browser add-on, available at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout</a>.
+            We may use this information, for example, to ensure that the Site functions properly, to determine how many users have visited certain pages or opened messages or newsletters, or to prevent fraud. We work with analytics providers such as Google Analytics, which uses cookies and similar technologies to collect and analyze information about use of the Site and report on activities and trends. These services may also collect information regarding the use of other websites, apps and online resources. You can learn about Google&quot;s practices by going to <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener noreferrer">https://www.google.com/policies/privacy/partners/</a>, and opt out of them by downloading the Google Analytics opt-out browser add-on, available at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout</a>.
         </p>
         <p>
             We also work with third parties advertisers (collectively, &quot;Advertisers&quot;) who may also use cookies or other technologies to track your use of the Site. Advertisers also may use cookies to track your online activities across websites over time to provide interest-based advertising. Some of our Advertisers are members of the Network Advertising Initiative or the Digital Advertising Alliance. Please visit these organizations&apos; opt-out pages to learn about how you may opt out of receiving web-based personalized ads from member companies. Please visit your device&apos;s settings or install the AppChoices app to learn more about how you may opt out of receiving personalized ads in mobile apps.
@@ -33,7 +33,7 @@ const PrivacyPage: React.FC = () => (
         </p>
         <p className="text-2xl my-2">How we use Personal Information</p>
         <p>
-            Logzilla may collect and use Users' Personal Information for the following purposes:
+            Logzilla may collect and use Users&quot; Personal Information for the following purposes:
         </p>
         <ul>
             <li>
@@ -65,7 +65,7 @@ const PrivacyPage: React.FC = () => (
             <li>You have consented to the use of your Personal Information, for example, to receive electronic marketing communications or to provide you with personalized advertising;</li>
             <li>We need your Personal Information to provide our services, including for account registration, to respond to your inquiries, or for customer support;</li>
             <li>We have a legal obligation to use your Personal Information; or</li>
-            <li>We or a third party have a legitimate interest in using your Personal Information. In particular, we have a legitimate interest in using your Personal Information to personalize our services and provide you with tailored content, conduct business analytics, and otherwise improve the safety, security, and performance of our Site. We only rely on our or a third party's legitimate interests to process your Personal Information when these interests are not overridden by your rights and interests.</li>
+            <li>We or a third party have a legitimate interest in using your Personal Information. In particular, we have a legitimate interest in using your Personal Information to personalize our services and provide you with tailored content, conduct business analytics, and otherwise improve the safety, security, and performance of our Site. We only rely on our or a third party&apos;s legitimate interests to process your Personal Information when these interests are not overridden by your rights and interests.</li>
         </ul>
         <p className="text-2xl my-2">Sharing your personal information</p>
         <p>
@@ -103,7 +103,7 @@ const PrivacyPage: React.FC = () => (
         </p>
         <p className="text-2xl my-2">Third party websites</p>
         <p>
-            Users may find advertising or other content on our Site that link to the sites and services of our partners, suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links that appear on these sites and are not responsible for the practices employed by websites linked to or from our Site. In addition, these sites or services, including their content and links, may be constantly changing. These sites and services may have their own privacy policies and customer service policies. Browsing and interaction on any other website, including websites which have a link to our Site, is subject to that website's own terms and policies.
+            Users may find advertising or other content on our Site that link to the sites and services of our partners, suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links that appear on these sites and are not responsible for the practices employed by websites linked to or from our Site. In addition, these sites or services, including their content and links, may be constantly changing. These sites and services may have their own privacy policies and customer service policies. Browsing and interaction on any other website, including websites which have a link to our Site, is subject to that website&apos;s own terms and policies.
         </p>
         <p className="text-2xl my-2">Data Retention</p>
         <p>

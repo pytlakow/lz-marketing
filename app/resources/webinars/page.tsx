@@ -253,6 +253,7 @@ export default function WebinarsPage() {
                         .filter((_, i) => i !== 11)
                         .map((w, i) => (
                             <div
+                                key={w.vidId || i}
                                 style={{ backgroundImage: `url(${w.img.src})` }}
                                 className="
                                     relative
