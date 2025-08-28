@@ -38,7 +38,7 @@ const AppliancesPage: React.FC = () => {
                 {/* SMB Appliance */}
                 <div className="flex-1 bg-white rounded-xl shadow-md p-8 flex flex-col items-center border border-slate-200">
                     <h3 className="text-xl font-bold text-slate-900 mb-2">SMB Appliance</h3>
-                    <span className="text-2xl font-semibold text-orange-600 mb-1">Small</span>
+                    <span className="text-2xl font-semibold text-orange-500 mb-1">Small</span>
                     <span className="text-slate-500 mb-4 text-xl">Business</span>
                     <p className="text-slate-600 text-center mb-6">
                         Perfect for small to medium businesses with moderate log processing needs.
@@ -59,11 +59,11 @@ const AppliancesPage: React.FC = () => {
                 </div>
                 {/* MSE Appliance */}
                 <div className="flex-1 bg-white rounded-xl shadow-md p-8 flex flex-col items-center border border-orange-400 relative">
-                    <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-orange-600 text-white text-lg font-bold px-4 py-1 rounded-full shadow">
+                    <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-lg font-bold px-4 py-1 rounded-full shadow">
                         Most Popular
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">MSE Appliance</h3>
-                    <span className="text-2xl font-semibold text-orange-600 mb-1">Mid-Size</span>
+                    <span className="text-2xl font-semibold text-orange-500 mb-1">Mid-Size</span>
                     <span className="text-slate-500 mb-4 text-xl">Enterprise</span>
                     <p className="text-slate-600 text-center mb-6">
                         Designed for mid-size enterprises with growing log processing requirements.
@@ -85,7 +85,7 @@ const AppliancesPage: React.FC = () => {
                 {/* Enterprise Appliance */}
                 <div className="flex-1 bg-white rounded-xl shadow-md p-8 flex flex-col items-center border border-slate-200">
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Enterprise Appliance</h3>
-                    <span className="text-2xl font-semibold text-orange-600 mb-1">Large</span>
+                    <span className="text-2xl font-semibold text-orange-500 mb-1">Large</span>
                     <span className="text-slate-500 mb-4 text-xl">Enterprise</span>
                     <p className="text-slate-600 text-center mb-6">
                         Built for large enterprises with massive log processing and retention needs.

@@ -6,12 +6,59 @@ export function CloudPricing() {
     const [isYearly, setIsYearly] = React.useState(false);
     return (
         <>
-            {/* <section className="">
-                <stripe-pricing-table
-                    pricing-table-id="prctbl_1QgxNABjYBeFaZwP2Gqme3he"
-                    publishable-key="pk_live_51Pyd2xBjYBeFaZwPNBMnLtw2hZuessmCU7m7EkTzedssntJt4NeC3UmT8iTI1AsMFeCW4mr6e0NfdT2n5BdkIG8s00u32BBL9M"
-                ></stripe-pricing-table>
-            </section> */}
+            <section className="bg-orange-500 border-y border-orange-700 mb-8">
+                <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+                    {/* Remove vertical space above the "claimed" badge by using absolute positioning */}
+                    {/* <div className="relative h-0 w-0 flex justify-end">
+                        <div
+                            className="absolute right-0 w-[150px] bg-orange-700 text-white font-bold text-lg px-8 py-2 rounded shadow-lg"
+                            style={{
+                                transform: "rotate(45deg)",
+                                boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+                            }}
+                        >
+                            171 claimed
+                        </div>
+                    </div> */}
+                    {/* Example: Centered horizontally using absolute positioning */}
+                    <div className="absolute top-[560px] left-1/2 translate-x-[200px] max-md:hidden">
+                        <div
+                            className="w-[150px] bg-orange-700 text-white font-bold text-lg px-8 py-2 rounded shadow-lg"
+                            style={{
+                                transform: "rotate(30deg)",
+                                boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+                            }}
+                        >
+                            171 claimed
+                        </div>
+                    </div>
+                    <div className="flex justify-center mb-4">
+                        <span className="text-4xl font-bold text-white animate-pulse">
+                            Launch Special!
+                        </span>
+                    </div>
+                    <div>
+                        <h2 className="text-2xl text-white font-bold mb-2 text-center">
+                            50% off your first billing cycle, only first 500
+                            customers!
+                        </h2>
+                        <h2 className="text-2xl text-white font-bold mb-2 text-center">
+                            Save up to $750/month or $7,495/year!
+                        </h2>
+                        <h2 className="text-2xl text-white font-bold mb-2 text-center">
+                            All Apps included on all tiers for a limited time
+                        </h2>
+                        <div className="flex justify-center w-full mt-8">
+                            <Button
+                                className="bg-white hover:bg-orange-500 border border-orange-500 !text-orange-500 hover:text-white text-lg font-bold shadow-md"
+                                onClick={() => setIsYearly(true)}
+                            >
+                                Claim
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="w-full flex flex-col items-center">
                 <h2 className="text-4xl text-slate-900 mb-4 text-center">
                     Pricing that scales with your data
@@ -99,8 +146,19 @@ export function CloudPricing() {
                                     </li>
                                 </ul>
                             </div>
-
-                            <Button className="rounded-none">Subscribe</Button>
+                            <div className="flex w-full px-8">
+                                <Button
+                                    href={
+                                        isYearly
+                                            ? "https://pay.logzilla.cloud/b/5kQdR84XN8oq51A3eyb7y09?prefilled_promo_code=LAUNCH50"
+                                            : "https://pay.logzilla.cloud/b/6oUbJ0gGv8oq1PocP8b7y0a?prefilled_promo_code=LAUNCH50"
+                                    }
+                                    target="_blank"
+                                    className="w-full"
+                                >
+                                    Subscribe
+                                </Button>
+                            </div>
                         </div>
                     </div>
                     {/* MSE Appliance */}
@@ -155,7 +213,19 @@ export function CloudPricing() {
                                     </li>
                                 </ul>
                             </div>
-                            <Button className="rounded-none">Subscribe</Button>
+                            <div className="flex w-full px-8">
+                                <Button
+                                    href={
+                                        isYearly
+                                            ? "https://pay.logzilla.cloud/b/5kQbJ03TJfQSalU8ySb7y0c?prefilled_promo_code=LAUNCH50"
+                                            : "https://pay.logzilla.cloud/b/5kQdR875VcEGfGedTcb7y0b?prefilled_promo_code=LAUNCH50"
+                                    }
+                                    className="w-full"
+                                    target="_blank"
+                                >
+                                    Subscribe
+                                </Button>
+                            </div>
                         </div>
                     </div>
                     {/* Enterprise Appliance */}
@@ -221,7 +291,19 @@ export function CloudPricing() {
                                     </li>
                                 </ul>
                             </div>
-                            <Button className="rounded-none">Subscribe</Button>
+                            <div className="flex w-full px-8">
+                                <Button
+                                    href={
+                                        isYearly
+                                            ? "https://pay.logzilla.cloud/b/8x2eVcai7awyfGe9CWb7y0e?prefilled_promo_code=LAUNCH50"
+                                            : "https://pay.logzilla.cloud/b/dRm5kC61RdIK3XwcP8b7y0d?prefilled_promo_code=LAUNCH50"
+                                    }
+                                    target="_blank"
+                                    className="w-full"
+                                >
+                                    Subscribe
+                                </Button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -230,61 +312,6 @@ export function CloudPricing() {
                     documentation and support resources. For detailed
                     specifications or custom requirements, please contact our
                     team below to discuss your specific needs.
-                </p>
-            </section>
-            <section className="w-full flex flex-col items-center mt-16" id="features">
-                <h2 className="text-3xl text-slate-900 mb-6 text-center">Compare features</h2>
-                <div className="overflow-x-auto w-full max-w-6xl mb-6">
-                    <table className="min-w-full bg-white rounded-xl shadow border border-slate-200 text-lg">
-                        <thead>
-                            <tr className="bg-slate-50">
-                                <th className="py-3 px-4 text-left font-semibold text-slate-700">Feature</th>
-                                <th className="py-3 px-4 text-center font-semibold text-slate-700">Starter</th>
-                                <th className="py-3 px-4 text-center font-semibold text-slate-700">Pro</th>
-                                <th className="py-3 px-4 text-center font-semibold text-slate-700">Business</th>
-                                <th className="py-3 px-4 text-center font-semibold text-slate-700">Enterprise</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {[
-                                ["Unlimited users", "✔", "✔", "✔", "✔"],
-                                ["Deduplication engine", "✔", "✔", "✔", "✔"],
-                                ["Dashboards & widgets", "✔", "✔", "✔", "✔"],
-                                ["Triggers (email, webhook, notification, notes, flags)", "✔", "✔", "✔", "✔"],
-                                ["Ingest API token", "✔", "✔", "✔", "✔"],
-                                ["Automatic archive search (live + archive)", "✔", "✔", "✔", "✔"],
-                                ["User tags (prebuilt from Apps)", "✔", "✔", "✔", "✔"],
-                                ["Vendor parsing rules", "", "✔", "✔", "✔"],
-                                ["Advanced log forwarder", "", "", "✔", "✔"],
-                                ["Admin/Query API", "", "", "✔", "✔"],
-                                ["Execute script (containerized)", "", "", "", "✔"],
-                                ["Custom user tags (via rules)", "", "", "", "✔"],
-                                ["Custom parsing (rewrite/Lua rules)", "", "", "", "✔"],
-                                ["Event correlation", "", "", "", "✔"],
-                                ["AI Copilot", "", "", "", "✔"],
-                                ["Max events/day", "2M", "5M", "15M", "✔"],
-                                ["Storage & retention", "100 GB, 30 days", "400 GB, 30 days", "800 GB, 30 days", "✔"],
-                                ["Support", "Email", "Priority email", "Slack + Remote Hands-on", "✔"],
-                            ].map((row, i) => (
-                                <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
-                                    <td className="py-2 px-4 text-slate-700">{row[0]}</td>
-                                    {row.slice(1).map((cell, j) => (
-                                        <td
-                                            key={j}
-                                            className={`py-2 px-4 text-center ${!cell ? "text-slate-400" : "text-slate-700"}`}
-                                            aria-label={!cell ? "Not available" : undefined}
-                                            title={!cell ? "Not available" : undefined}
-                                        >
-                                            {cell || <span className="text-slate-300">—</span>}
-                                        </td>
-                                    ))}
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
-                <p className="text-slate-500 text-sm max-w-3xl text-center mt-2">
-                    Launch Special: Appstore, LDAP, and RBAC are included on all tiers for a limited time. Some features may move to Pro/Business after the launch period. Launch Special applies to new customers only. Discount applies to first billing cycle only.
                 </p>
             </section>
         </>

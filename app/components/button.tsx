@@ -4,25 +4,29 @@ import Link from 'next/link';
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     children: React.ReactNode;
     href?: string;
+    target?: string;
 };
 
-const Button: React.FC<ButtonProps> = ({ children, href, ...props }) => {
+const baseClass = "flex justify-center items-center cursor-pointer bg-orange-500 hover:bg-orange-400 text-white text-lg font-semibold py-2 px-4 rounded hover:shadow-md transition-colors duration-200";
+
+const Button: React.FC<ButtonProps> = ({ children, href, className = '', ...props }) => {
     if (href) {
         return (
-            <Link href={href} passHref>
-                <button
-                    {...props}
-                    className={`flex justify-center items-center cursor-pointer bg-orange-500 hover:bg-orange-400 text-white font-semibold py-2 px-4 rounded hover:shadow-md transition-colors duration-200 ${props.className ?? ''}`}
-                >
-                    {children}
-                </button>
-            </Link>
+            <a
+                href={href}
+                className={`${baseClass} ${className}`}
+                style={props.style}
+                target={props.target}
+                rel={props.rel}
+            >
+                {children}
+            </a>
         );
     }
     return (
         <button
             {...props}
-            className={`flex justify-center items-center cursor-pointer bg-orange-500 hover:bg-orange-400  text-white font-semibold py-2 px-4 rounded hover:shadow-md transition-colors duration-200 ${props.className ?? ''}`}
+            className={`${baseClass} ${className}`}
         >
             {children}
         </button>
