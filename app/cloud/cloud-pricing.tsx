@@ -50,7 +50,7 @@ export function CloudPricing() {
                         </h2>
                         <div className="flex justify-center w-full mt-8">
                             <Button
-                                className="bg-white hover:bg-orange-500 border border-orange-500 !text-orange-500 hover:text-white text-lg font-bold shadow-md"
+                                className="bg-white hover:bg-orange-600 border border-orange-500 !text-orange-500 hover:!text-white text-lg font-bold shadow-md"
                                 onClick={() => setIsYearly(true)}
                             >
                                 Claim

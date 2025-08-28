@@ -40,33 +40,33 @@ const Navbar: React.FC = () => {
                             onMouseEnter={() => setDropdownOpen(true)}
                             onMouseLeave={() => setDropdownOpen(false)}
                         >
-                            <div className="flex items-center cursor-pointer">
-                                <LinkButton
-                                    href="/resources"
-                                    isActive={pathname === "/resources"}
+                            <div className="flex items-center cursor-default">
+                                <a
+                                    
+                                    
                                     className="flex items-center"
                                 >
                                     Resources
                                     <span className="ml-2 mt-2">
                                         <Icon name="chavrionDown" />
                                     </span>
-                                </LinkButton>
+                                </a>
                             </div>
                             {/* Dropdown menu */}
                             <div
-                                className={`absolute left-0 top-full w-[400px] bg-white shadow-lg rounded-lg transition-all duration-200 z-50 ${
+                                className={`absolute left-0 top-full bg-white shadow-lg rounded-lg transition-all duration-200 z-50 ${
                                     dropdownOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
                                 }`}
                             >
                                 <div className="flex flex-row p-6 gap-8">
                                     <div className="flex flex-col space-y-2 flex-1">
-                                        <LinkButton href="/resources/docs">Documentation</LinkButton>
-                                        <LinkButton href="/resources/blog">Blog</LinkButton>
-                                        <LinkButton href="/resources/tutorials">Tutorials</LinkButton>
-                                    </div>
-                                    <div className="flex flex-col space-y-2 flex-1">
+                                        <LinkButton href="/resources/webinars">Webinars</LinkButton>
+                                        <LinkButton href="/resources/blog">Blogzilla</LinkButton>
+                                        <LinkButton href="/resources/blog">University</LinkButton>
                                         <LinkButton href="/resources/support">Support</LinkButton>
-                                        <LinkButton href="/resources/community">Community</LinkButton>
+                                        <LinkButton href="/download">Download</LinkButton>
+                                        <LinkButton href="https://api.logzilla.io/" target="_blank">Documentation</LinkButton>
+                                        <LinkButton href="https://demo.logzilla.net/" target="_blank">Demo</LinkButton>
                                         <LinkButton href="/resources/faq">FAQ</LinkButton>
                                     </div>
                                 </div>

@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
                                     target="_blank"
                                     className="hover:underline"
                                 >
-                                    API Documentation
+                                    Documentation
                                 </a>
                             </li>
                         </ul>

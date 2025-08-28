@@ -1,3 +1,13 @@
-export default function FAQ() {
-  return <div className="container mx-auto p-8">FAQ Page</div>;
+import FAQ from "@/app/sections/faq";
+
+export default function FAQPage() {
+  return (
+    <>
+
+   
+        <FAQ />
+    
+
+    </>
+  );
 }
