@@ -3,9 +3,9 @@ import React from 'react';
 
 
 export const CloudFeatures: React.FC = () => (
-        <section className="flex flex-col justify-center items-center pt-26 pb-16 px-4 text-slate-700">
+    <section className="flex flex-col justify-center items-center pt-8 pb-8 px-4 text-slate-700">
         <div className="mx-auto max-w-7xl px-4 font-medium  sm:text-7xl text-center">
-            <h1 className="text-5xl  sm:text-7xl text-center">
+            <h1 className="text-3xl  sm:text-7xl text-center">
                 Logzilla{" "}
                 <span className="relative whitespace-nowrap text-orange-600">
                     <svg
@@ -19,21 +19,19 @@ export const CloudFeatures: React.FC = () => (
                     <span className="relative">Cloud</span>
                 </span>
             </h1>
-            <p className="text-3xl py-10 ">
+            <p className="text-3xl py-4">
                Cut log noise. Cut costs. Fix incidents fast.
             </p>
-            <p className="text-xl py-4">
+            <p className="text-xl pb-4 max-w-3xl">
                 Trusted for 15 years on‑prem and now in the cloud. Real‑time deduplication, enrichment, and trigger‑based automation move teams from fire‑fighting to outcomes in seconds.
             </p>
-            <p className="text-xl py-1">
+            <p className="text-xl pb-1">
                 Reduce downstream spend by forwarding only what matters (Business tier)
             </p>
-            <p className="text-xl py-1">
-               Unlimited users on every plan
+            <p className="text-xl pb-1">
+               Unlimited users on every plan. Transparent limits: events/day, storage, retention.
             </p>
-            <p className="text-xl py-1">
-                Transparent limits: events/day, storage, retention
-            </p>
+            
         </div>
     </section>
 );

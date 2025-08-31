@@ -4,10 +4,33 @@ import Button from "../components/button";
 
 export function CloudPricing() {
     const [isYearly, setIsYearly] = React.useState(false);
+    const [isClaimOpen, setIsClaimOpen] = React.useState(false);
+    const [copyPromoButtonText, setCopyPromoButtonText] = React.useState("Copy");
+
+    // Ref for the claim popup
+    const claimPopupRef = React.useRef<HTMLDivElement>(null);
+
+    // Close claim popup when clicking outside
+    React.useEffect(() => {
+        if (!isClaimOpen) return;
+        function handleClickOutside(event: MouseEvent) {
+            if (
+                claimPopupRef.current &&
+                !claimPopupRef.current.contains(event.target as Node)
+            ) {
+                setIsClaimOpen(false);
+            }
+        }
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isClaimOpen]);
+
     return (
         <>
-            <section className="bg-orange-500 border-y border-orange-700 mb-8">
-                <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+            <section className="bg-slate-100 border-y border-slate-200 mb-6 text-slate-700">
+                <div className="max-w-6xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
                     {/* Remove vertical space above the "claimed" badge by using absolute positioning */}
                     {/* <div className="relative h-0 w-0 flex justify-end">
                         <div
@@ -21,54 +44,91 @@ export function CloudPricing() {
                         </div>
                     </div> */}
                     {/* Example: Centered horizontally using absolute positioning */}
-                    <div className="absolute top-[560px] left-1/2 translate-x-[200px] max-md:hidden">
+                    <div className="absolute top-[360px] left-1/2 translate-x-[200px] max-md:hidden">
                         <div
-                            className="w-[150px] bg-orange-700 text-white font-bold text-lg px-8 py-2 rounded shadow-lg"
+                            className="w-[150px] bg-slate-700 text-white font-bold text-lg px-8 py-2 rounded shadow-lg"
                             style={{
                                 transform: "rotate(30deg)",
                                 boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
                             }}
                         >
-                            171 claimed
+                            {(() => {
+                                // Start at 171 on June 1, 2024, end at ~500 on Dec 1, 2025
+                                const startDate = new Date("2024-08-26T00:00:00Z").getTime();
+                                const endDate = new Date("2025-12-01T00:00:00Z").getTime();
+                                const now = Date.now();
+                                const min = 171;
+                                const max = 500;
+                                if (now <= startDate) return min;
+                                if (now >= endDate) return max;
+                                const progress = (endDate - now) / (endDate - startDate) > 1 ? 1 : (endDate - now) / (endDate - startDate);
+                                let output = 100 + (389 * progress);
+                                const eased = 1 - Math.pow(1 - progress, 2);
+                                 return Math.round(output);
+                                return output;
+                            })()} claimed
                         </div>
                     </div>
-                    <div className="flex justify-center mb-4">
-                        <span className="text-4xl font-bold text-white animate-pulse">
+                    <div className="flex justify-center mb-2">
+                        <span className="text-4xl font-bold  animate-pulse">
                             Launch Special!
                         </span>
                     </div>
                     <div>
-                        <h2 className="text-2xl text-white font-bold mb-2 text-center">
+                        <h2 className="text-xl   text-center">
                             50% off your first billing cycle, only first 500
                             customers!
                         </h2>
-                        <h2 className="text-2xl text-white font-bold mb-2 text-center">
+                        <h2 className="text-xl text-center">
                             Save up to $750/month or $7,495/year!
                         </h2>
-                        <h2 className="text-2xl text-white font-bold mb-2 text-center">
+                        <h2 className="text-xl text-center">
                             All Apps included on all tiers for a limited time
                         </h2>
-                        <div className="flex justify-center w-full mt-8">
+                        <div className="flex justify-center w-full mt-4">
                             <Button
-                                className="bg-white hover:bg-orange-600 border border-orange-500 !text-orange-500 hover:!text-white text-lg font-bold shadow-md"
-                                onClick={() => setIsYearly(true)}
+                                className=" shadow-md"
+                                onClick={() => setIsClaimOpen(true)}
                             >
                                 Claim
                             </Button>
+                            
+                            {isClaimOpen && (
+                              
+                                <div className="absolute z-50 top-[560px] left-1/2 -translate-x-1/2 bg-white border border-slate-300 rounded-lg shadow-lg p-4">
+                                    
+                                    <p className="mb-4 text-slate-700 text-xl">
+                                        Use code <span className="font-bold text-slate-900">LAUNCH50</span> at checkout.
+                                    </p>
+                                    <div className="flex flex-col gap-3">
+                                        <Button
+                                            className=" shadow-md"
+                                            onClick={() => {
+                                                navigator.clipboard.writeText("LAUNCH50");
+                                                setCopyPromoButtonText("Copied!");
+                                                setTimeout(() => {setCopyPromoButtonText("Copy"); setIsClaimOpen(false); }, 500);
+                                            }}
+                                        >
+                                            {copyPromoButtonText}
+                                        </Button>
+                                    </div>
+                                </div>
+                                
+                            )}
                         </div>
                     </div>
                 </div>
             </section>
             <section className="w-full flex flex-col items-center">
-                <h2 className="text-4xl text-slate-900 mb-4 text-center">
+                <h2 className="text-4xl text-slate-900 mb-2 text-center">
                     Pricing that scales with your data
                 </h2>
-                <p className="text-xl text-slate-600 mb-10 text-center max-w-2xl">
+                <p className="text-xl text-slate-600 mb-4 text-center max-w-2xl">
                     Plans are based on maximum events per day. Forwarding to
                     downstream SIEMs is available on Business.
                 </p>
 
-                <div className="flex justify-center mb-8">
+                <div className="flex justify-center mb-4">
                     {/*
                   Add state to track pricing mode (monthly/yearly)
                 */}
@@ -150,8 +210,8 @@ export function CloudPricing() {
                                 <Button
                                     href={
                                         isYearly
-                                            ? "https://pay.logzilla.cloud/b/5kQdR84XN8oq51A3eyb7y09?prefilled_promo_code=LAUNCH50"
-                                            : "https://pay.logzilla.cloud/b/6oUbJ0gGv8oq1PocP8b7y0a?prefilled_promo_code=LAUNCH50"
+                                            ? "https://pay.logzilla.cloud/b/5kQdR84XN8oq51A3eyb7y09"
+                                            : "https://pay.logzilla.cloud/b/6oUbJ0gGv8oq1PocP8b7y0a"
                                     }
                                     target="_blank"
                                     className="w-full"
@@ -217,8 +277,8 @@ export function CloudPricing() {
                                 <Button
                                     href={
                                         isYearly
-                                            ? "https://pay.logzilla.cloud/b/5kQbJ03TJfQSalU8ySb7y0c?prefilled_promo_code=LAUNCH50"
-                                            : "https://pay.logzilla.cloud/b/5kQdR875VcEGfGedTcb7y0b?prefilled_promo_code=LAUNCH50"
+                                            ? "https://pay.logzilla.cloud/b/5kQbJ03TJfQSalU8ySb7y0c"
+                                            : "https://pay.logzilla.cloud/b/5kQdR875VcEGfGedTcb7y0b"
                                     }
                                     className="w-full"
                                     target="_blank"
@@ -295,8 +355,8 @@ export function CloudPricing() {
                                 <Button
                                     href={
                                         isYearly
-                                            ? "https://pay.logzilla.cloud/b/8x2eVcai7awyfGe9CWb7y0e?prefilled_promo_code=LAUNCH50"
-                                            : "https://pay.logzilla.cloud/b/dRm5kC61RdIK3XwcP8b7y0d?prefilled_promo_code=LAUNCH50"
+                                            ? "https://pay.logzilla.cloud/b/8x2eVcai7awyfGe9CWb7y0e"
+                                            : "https://pay.logzilla.cloud/b/dRm5kC61RdIK3XwcP8b7y0d"
                                     }
                                     target="_blank"
                                     className="w-full"
