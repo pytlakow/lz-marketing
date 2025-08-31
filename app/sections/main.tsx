@@ -33,8 +33,13 @@ const Main: React.FC = () => {
                     </Button>
                 </div>
                 <div>
-
-                    <CalendlyPopup url="https://calendly.com/teamneo/logzilla-discovery?hide_event_type_details=1&hide_gdpr_banner=1" buttonText="Get a Personalized Demo." />
+                    <Button href="#schedule-consultation">
+                        <span className="mr-2">
+                            <Icon name="calendar" />
+                        </span>
+                        Get a Personalized Demo
+                    </Button>
+                    
                 </div>
             </div>
         </section>

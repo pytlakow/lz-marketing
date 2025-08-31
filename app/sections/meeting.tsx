@@ -19,10 +19,10 @@ const Meeting: React.FC = () => {
         //         Get a Personalized Demo
         //     </Button>
         // </section>
-        <section className="bg-white  text-gray-700 px-4 sm:px-6 lg:px-8">
+        <section id="schedule-consultation" className="bg-white  text-gray-700 px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between items-start py-16 max-w-7xl mx-auto">
                 <div className="md:flex-1/2 sm:flex-1 md:pr-6">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-4xl text-gray-900 mb-4">
                         Schedule a Consultation
                     </h2>
                     <p className="text-lg text-gray-500 mb-8">
