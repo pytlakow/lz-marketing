@@ -62,10 +62,10 @@ export function CloudPricing() {
                                 if (now <= startDate) return min;
                                 if (now >= endDate) return max;
                                 const progress = (endDate - now) / (endDate - startDate) > 1 ? 1 : (endDate - now) / (endDate - startDate);
-                                let output = 100 + (389 * progress);
+                                const output = 100 + (389 * progress);
                                 const eased = 1 - Math.pow(1 - progress, 2);
-                                 return Math.round(output);
-                                return output;
+                                return Math.round(output);
+                                
                             })()} claimed
                         </div>
                     </div>

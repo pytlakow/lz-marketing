@@ -1,6 +1,6 @@
 import React from 'react';
 
-type IconName = 'calendar' | 'download' | 'search' | 'chavrionDown';
+type IconName = 'calendar' | 'download' | 'search' | 'chavrionDown' | 'webinar';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
     name: IconName;
@@ -40,11 +40,22 @@ const ChavrionDwonIcon: IconComponent = ({ color, ...props }) => (
     </svg>
 );
 
+const WebinarIcon: IconComponent = ({ color, ...props }) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <rect x="3" y="7" width="18" height="13" rx="2" />
+        <path d="M16 3v4" />
+        <path d="M8 3v4" />
+        <circle cx="12" cy="14" r="3" />
+        <path d="M12 17v2" />
+    </svg>
+);
+
 const icons: Record<IconName, IconComponent> = {
     calendar: CalendarIcon,
     download: DownloadIcon,
     search: SearchIcon,
     chavrionDown: ChavrionDwonIcon,
+    webinar: WebinarIcon,
 };
 
 const Icon: React.FC<IconProps> = ({ name, color = 'currentColor', size = 24, ...props }) => {

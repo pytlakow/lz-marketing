@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
                                 }`}
                             >
                                 <div className="flex flex-row p-6 gap-8">
-                                    <div className="flex flex-col space-y-2 flex-1">
+                                    <div className="flex flex-col space-y-2 flex-1 items-start">
                                         <LinkButton href="/resources/webinars">Webinars</LinkButton>
                                         <LinkButton href="/resources/blog">Blogzilla</LinkButton>
                                         <LinkButton href="/resources/blog">University</LinkButton>
