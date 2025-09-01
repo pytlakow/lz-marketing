@@ -41,8 +41,10 @@ export default function RootLayout({
                 
 
                 <main className="relative h-screen overflow-hiddenflex items-center justify-center ">
-                    {children}
-                    <Footer></Footer>
+                    <div className="flex flex-col min-h-screen">
+                        <div className="flex-1">{children}</div>
+                        <Footer />
+                    </div> 
                 </main>
             </body>
         </html>

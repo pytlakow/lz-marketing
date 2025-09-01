@@ -61,35 +61,35 @@ const Navbar: React.FC = () => {
                                 <div className="flex flex-row p-6 gap-8">
                                     <div className="flex flex-col space-y-2 flex-1 items-start">
                                         <LinkButton onClick={() => setDropdownOpen(false)} href="/resources/webinars">
-                                            <span className="mr-2 mt-1"><Icon name="webinar" /></span>
+                                            <span className="mr-3 mt-1"><Icon name="webinar" /></span>
                                             Webinars
                                         </LinkButton>
                                         <LinkButton onClick={() => setDropdownOpen(false)} href="/resources/blog">
-                                            <span className="mr-2 mt-1"><Icon name="blogzilla" /></span>
+                                            <span className="mr-3 mt-1"><Icon name="blogzilla" /></span>
                                             Blogzilla
                                         </LinkButton>
                                         <LinkButton onClick={() => setDropdownOpen(false)} href="/resources/blog">
-                                            <span className="mr-2 mt-1"><Icon name="university" /></span>
+                                            <span className="mr-3 mt-1"><Icon name="university" /></span>
                                             University
                                         </LinkButton>
-                                        <LinkButton onClick={() => setDropdownOpen(false)} href="/resources/support">
-                                            <span className="mr-2 mt-1"><Icon name="support" /></span>
+                                        <LinkButton onClick={() => setDropdownOpen(false)} target="_blank" href="https://logzilla.zendesk.com/">
+                                            <span className="mr-3 mt-1"><Icon name="support" /></span>
                                             Support
                                         </LinkButton>
                                         <LinkButton onClick={() => setDropdownOpen(false)} href="/download">
-                                            <span className="mr-2 mt-1"><Icon name="download" /></span>
+                                            <span className="mr-3 mt-1"><Icon name="download" /></span>
                                             Download
                                         </LinkButton>
                                         <LinkButton onClick={() => setDropdownOpen(false)} href="https://api.logzilla.io/" target="_blank">
-                                            <span className="mr-2 mt-1"><Icon name="documentation" /></span>
+                                            <span className="mr-3 mt-1"><Icon name="documentation" /></span>
                                             Documentation
                                         </LinkButton>
                                         <LinkButton onClick={() => setDropdownOpen(false)} href="https://demo.logzilla.net/" target="_blank">
-                                            <span className="mr-2 mt-1"><Icon name="demo" /></span>
+                                            <span className="mr-3 mt-1"><Icon name="demo" /></span>
                                             Demo
                                         </LinkButton>
                                         <LinkButton onClick={() => setDropdownOpen(false)} href="/resources/faq">
-                                            <span className="mr-2 mt-1"><Icon name="faq" /></span>
+                                            <span className="mr-3 mt-1"><Icon name="faq" /></span>
                                             FAQ
                                         </LinkButton>
                                     </div>

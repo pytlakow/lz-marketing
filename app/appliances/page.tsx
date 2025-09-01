@@ -1,4 +1,5 @@
 import React from 'react';
+import Meeting from '../sections/meeting';
 
 const AppliancesPage: React.FC = () => {
     return (
@@ -109,6 +110,9 @@ const AppliancesPage: React.FC = () => {
                 All appliance configurations include comprehensive documentation and support resources. For detailed specifications or custom requirements, please contact our team below to discuss your specific needs.
             </p>
         </section>
+        <div className="border-t border-slate-200 mt-8">
+                <Meeting  />
+            </div>
         </>
     );
 };

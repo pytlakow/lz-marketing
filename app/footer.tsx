@@ -85,13 +85,8 @@ const Footer: React.FC = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">
+                                <a href="/resources/blog"className="hover:underline">
                                     Blog Articles
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:underline">
-                                    Use Cases
                                 </a>
                             </li>
                         </ul>

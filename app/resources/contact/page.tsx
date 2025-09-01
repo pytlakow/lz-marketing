@@ -39,7 +39,7 @@ export default function ContactPage() {
                     </div>
                 </div>
             </div>
-            <div className="max-w-xl w-full bg-white rounded-lg shadow-md p-8">
+            {/* <div className="max-w-xl w-full bg-white rounded-lg shadow-md p-8">
                 <h1 className="text-3xl font-bold text-gray-900 mb-6 text-center">Contact Us</h1>
                 <p className="text-gray-700 mb-4 text-center">
                     We&#39;d love to hear from you! Please reach out with any questions or feedback.
@@ -79,7 +79,7 @@ export default function ContactPage() {
                         Send Message
                     </button>
                 </form>
-            </div>
+            </div> */}
         </section>
     );
 }
