@@ -218,6 +218,7 @@ export default function WebinarsPage() {
             {/* Featured Webinar */}
             <section className="mb-12 flex justify-center bg-gradient-to-r from-slate-300 via-slate-900 to-slate-300 py-10">
                 <a
+                    target="_blank"
                     href={webinars[11].href}
                     className="relative w-full max-w-7xl overflow-hidden group min-h-[700px] bg-cover bg-center border-2 border-amber-50"
                     style={{

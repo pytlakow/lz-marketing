@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
                                             <span className="mr-3 mt-1"><Icon name="blogzilla" /></span>
                                             Blogzilla
                                         </LinkButton>
-                                        <LinkButton onClick={() => setDropdownOpen(false)} href="/resources/blog">
+                                        <LinkButton onClick={() => setDropdownOpen(false)} href="/resources/university">
                                             <span className="mr-3 mt-1"><Icon name="university" /></span>
                                             University
                                         </LinkButton>
