@@ -1,6 +1,6 @@
 import React from 'react';
 
-type IconName = 'calendar' | 'download' | 'search' | 'chavrionDown' | 'webinar';
+type IconName = 'calendar' | 'download' | 'search' | 'chavrionDown' | 'webinar' | 'blogzilla' | 'university' | 'support' | 'documentation' | 'demo' | 'faq';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
     name: IconName;
@@ -41,14 +41,69 @@ const ChavrionDwonIcon: IconComponent = ({ color, ...props }) => (
 );
 
 const WebinarIcon: IconComponent = ({ color, ...props }) => (
-    <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" {...props}>
-        <rect x="3" y="7" width="18" height="13" rx="2" />
-        <path d="M16 3v4" />
-        <path d="M8 3v4" />
-        <circle cx="12" cy="14" r="3" />
-        <path d="M12 17v2" />
+    <svg viewBox="0 0 32 32" fill="none" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <rect x="4" y="6" width="24" height="18" rx="2" />
+        <line x1="16" y1="6" x2="16" y2="24" />
+        <circle cx="10" cy="13" r="3" />
+        <circle cx="22" cy="11" r="1.5" />
+        <circle cx="22" cy="15" r="1.5" />
+        <circle cx="22" cy="19" r="1.5" />
     </svg>
 );
+
+
+const BlogzillaIcon: IconComponent = ({ color, ...props }) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <rect x="4" y="4" width="16" height="16" rx="2" />
+        <path d="M8 8h8v8H8z" />
+        <circle cx="12" cy="12" r="1.5" />
+    </svg>
+);
+
+const UniversityIcon: IconComponent = ({ color, ...props }) => (
+    <svg viewBox="0 0 64 64" fill="none" {...props} width="1em" height="1em">
+        <polygon points="32,8 4,24 60,24" stroke={color} strokeWidth="2" fill="none"/>
+        <rect x="8" y="24" width="48" height="24" stroke={color} strokeWidth="2" fill="none"/>
+        <rect x="4" y="48" width="56" height="4" stroke={color} strokeWidth="2" fill="none"/>
+        <rect x="16" y="24" width="4" height="24" fill={color}/>
+        <rect x="28" y="24" width="4" height="24" fill={color}/>
+        <rect x="40" y="24" width="4" height="24" fill={color}/>
+        <rect x="52" y="24" width="4" height="24" fill={color}/>
+    </svg>
+)
+
+
+const SupportIcon: IconComponent = ({ color, ...props }) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 16v-4" />
+        <path d="M12 8h.01" />
+    </svg>
+);
+
+const DocumentationIcon: IconComponent = ({ color, ...props }) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <rect x="4" y="2" width="16" height="20" rx="2" />
+        <line x1="8" y1="6" x2="16" y2="6" />
+        <line x1="8" y1="10" x2="16" y2="10" />
+        <line x1="8" y1="14" x2="12" y2="14" />
+    </svg>
+);
+
+const DemoIcon: IconComponent = ({ color, ...props }) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+        <polygon points="10 8 16 12 10 16 10 8" />
+    </svg>
+);
+const FAQIcon: IconComponent = ({ color, ...props }) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <circle cx="12" cy="12" r="10" />
+        <path d="M9 10a3 3 0 0 1 6 0c0 2-3 2-3 4" />
+        <line x1="12" y1="17" x2="12" y2="17" />
+    </svg>
+);
+
 
 const icons: Record<IconName, IconComponent> = {
     calendar: CalendarIcon,
@@ -56,6 +111,12 @@ const icons: Record<IconName, IconComponent> = {
     search: SearchIcon,
     chavrionDown: ChavrionDwonIcon,
     webinar: WebinarIcon,
+    blogzilla: BlogzillaIcon,
+    university: UniversityIcon,
+    support: SupportIcon,
+    documentation: DocumentationIcon,
+    demo: DemoIcon,
+    faq: FAQIcon,
 };
 
 const Icon: React.FC<IconProps> = ({ name, color = 'currentColor', size = 24, ...props }) => {
