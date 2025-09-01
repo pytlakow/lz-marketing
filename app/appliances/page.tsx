@@ -5,8 +5,8 @@ const AppliancesPage: React.FC = () => {
     return (
         <>
         
-        <section className="flex flex-col justify-center items-center pt-26 pb-16 px-4">
-            <h1 className="mx-auto max-w-4xl text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl text-center">
+        <section className="flex flex-col justify-center items-center pt-8 pb-16 px-4">
+            <h1 className="mx-auto max-w-4xl text-5xl font-medium tracking-tight text-slate-700 sm:text-7xl text-center">
                 LogZilla{" "}
                 <span className="relative whitespace-nowrap text-orange-600">
                     <svg
@@ -29,7 +29,7 @@ const AppliancesPage: React.FC = () => {
 
         </section>
         <section className="w-full flex flex-col items-center">
-            <h2 className="text-4xl text-slate-900 mb-4 text-center">
+            <h2 className="text-4xl text-slate-700 mb-4 text-center">
                 Appliance Configurations
             </h2>
             <p className="text-2xl text-slate-600 mb-10 text-center max-w-2xl">

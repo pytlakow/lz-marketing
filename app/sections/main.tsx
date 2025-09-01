@@ -5,8 +5,8 @@ import CalendlyPopup from "../components/calendly-popup";
 
 const Main: React.FC = () => {
     return (
-        <section className="flex flex-col justify-center items-center pt-26 pb-16 px-4">
-            <h1 className="mx-auto max-w-4xl text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl text-center">
+        <section className="flex flex-col justify-center items-center pt-8 pb-16 px-4">
+            <h1 className="mx-auto max-w-4xl text-5xl font-medium tracking-tight text-slate-700 sm:text-7xl text-center">
                 Log Management{" "}
                 <span className="relative whitespace-nowrap text-orange-600">
                     <svg

@@ -1,9 +1,9 @@
 import React from "react";
 
 const AiPowered: React.FC = () => (
-    <section className="flex flex-col justify-center items-center pt-26 pb-16 px-4">
+    <section className="flex flex-col justify-center items-center pt-8 pb-16 px-4">
         <div className="mx-auto max-w-7xl px-4 font-medium text-gray-700 sm:text-7xl text-center">
-            <h1 className="text-5xl text-slate-900 sm:text-7xl text-center">
+            <h1 className="text-5xl text-slate-700 sm:text-7xl text-center">
                 AI-Powered{" "}
                 <span className="relative whitespace-nowrap text-orange-600">
                     <svg
