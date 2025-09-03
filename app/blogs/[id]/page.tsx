@@ -8,7 +8,6 @@ export default function BlogPage() {
     const { id } = useParams();
 
     const [content, setContent] = useState<string | null>(null);
-    const [images, setImages] = useState<string[]>([]);
 
     useEffect(() => {
         if (!id) return;

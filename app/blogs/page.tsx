@@ -9,7 +9,7 @@ export default function BlogsPage() {
         <h2 className="font-manrope text-4xl font-bold text-gray-900 text-center mb-16">Our latest  blog</h2>
           <div className="flex justify-center  gap-y-8 flex-wrap">
         {blogs.map((blog) => (
-        <div className="group w-full max-lg:max-w-xl lg:w-[32%] border border-gray-300 rounded-2xl mx-2 mb-4" >
+        <div key={blog.slug} className="group w-full max-lg:max-w-xl lg:w-[32%] border border-gray-300 rounded-2xl mx-2 mb-4" >
           <div className="flex items-center">
             <img src={`/blogs/${blog.slug}/${blog.banner_image}`} alt="blogs tailwind section" className="rounded-t-2xl w-full object-cover"/>
           </div>
