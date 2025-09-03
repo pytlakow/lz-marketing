@@ -4,6 +4,7 @@ import React from "react";
 import FAQ from "../sections/faq";
 import CloudBanner from "../sections/cloud-banner";
 import Meeting from "../sections/meeting";
+import TCOChart from "../components/tco";
 
 
 const DownloadPage: React.FC = () => {
@@ -59,7 +60,7 @@ No complicated setup, just instant enterprise-grade power.
     <div className="bg-white">
         <FAQ />
     </div>
-    
+    <TCOChart />
 
     </>
   );
