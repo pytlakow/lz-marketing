@@ -11,7 +11,7 @@ export default function BlogsPage() {
         {blogs.map((blog) => (
         <div key={blog.slug} className="group w-full max-lg:max-w-xl lg:w-[32%] border border-gray-300 rounded-2xl mx-2 mb-4" >
           <div className="flex items-center">
-            <img src={`/blogs/${blog.slug}/${blog.banner_image}`} alt="blogs tailwind section" className="rounded-t-2xl w-full object-cover"/>
+            <img src={`/blogs_data/${blog.slug}/${blog.banner_image}`} alt="blogs tailwind section" className="rounded-t-2xl w-full object-cover"/>
           </div>
           <div className="p-4 lg:p-6 transition-all duration-300 rounded-b-2xl group-hover:bg-gray-50">
             <span className="text-orange-600 font-medium mb-3 block">{blog.updated_date}</span>
