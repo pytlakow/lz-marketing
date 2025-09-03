@@ -15,8 +15,10 @@ export default function BlogPage() {
         fetch(`/blogs_data/${id}/index.md`)
             .then((res) => res.text())
             .then((md) => {
-                console.log(md);
-                setContent(md);
+                
+                const cleanedMd = md.replace(/^---[\s\S]*?---\s*/, "");
+                console.log(cleanedMd);
+                setContent(cleanedMd);
                 // const imageRegex = /!\[.*?\]\((.*?)\)/g;
                 // const matches = Array.from(md.matchAll(imageRegex));
                 // const imageUrls = matches.map(match => match[1]);
