@@ -12,7 +12,7 @@ export default function BlogPage() {
     useEffect(() => {
         if (!id) return;
 
-        fetch(`/blogs/${id}/index.md`)
+        fetch(`/blogs_data/${id}/index.md`)
             .then((res) => res.text())
             .then((md) => {
                 console.log(md);

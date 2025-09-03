@@ -1,5 +1,5 @@
 import React from 'react';
-import blogs from '../../public/blogs';
+import blogs from '../../public/blogs_data';
 
 export default function BlogsPage() {
   return (

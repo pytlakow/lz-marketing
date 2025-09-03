@@ -1,3 +1,23 @@
+---
+title: "Uncovering Hidden Network Issues with LogZilla: A Sales Perspective"
+slug: "application-performance-degradation"
+author: "pwillis"
+category: "itops"
+meta_description: "Learn how LogZilla helps a salesperson identify complex network issues and improve IT triage, even without an extensive technical background."
+meta_title: "Uncover Network Issues with LogZilla: Sales Insights"
+reading_time: "1"
+keywords: "LogZilla, network issues, sales perspective, log data analysis, network dashboard, IT triage, log management"
+tags: "netops; scalability; performance"
+created_date: "2021-12-10"
+updated_date: "2023-04-05"
+published_date: "2023-04-05"
+background_image: "images/background_960x540.webp"
+banner_image: "images/banner_1600x499.webp"
+half_width_image: "images/half_width_700x540.webp"
+thumbnail_image: "images/thumbnail_300x300.webp"
+opengraph_image: "images/opengraph_1200x630.jpg"
+---
+
 # Introduction: A Sales Perspective on Log Data Analysis
 
 As a salesperson working with customers on data analysis reviews, I've discovered that even someone without an extensive technical background can identify network issues that seasoned professionals might overlook. With the help of LogZilla, a powerful log management tool, I've been able to spot problems like duplex mismatches, teardrop attacks, and subnet mismatches, helping our customers fix issues they didn't even know existed.
